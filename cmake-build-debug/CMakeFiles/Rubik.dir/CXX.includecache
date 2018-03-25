@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/i32ropie/Dropbox/Proyectos/Rubik/src/colors.hpp
+
+/home/i32ropie/Dropbox/Proyectos/Rubik/src/cube.hpp
+vector
+-
+face.hpp
+/home/i32ropie/Dropbox/Proyectos/Rubik/src/face.hpp
+
+/home/i32ropie/Dropbox/Proyectos/Rubik/src/face.hpp
+vector
+-
+initializer_list
+-
+colors.hpp
+/home/i32ropie/Dropbox/Proyectos/Rubik/src/colors.hpp
+
+/home/i32ropie/Dropbox/Proyectos/Rubik/src/main.cpp
+iostream
+-
+cube.hpp
+/home/i32ropie/Dropbox/Proyectos/Rubik/src/cube.hpp
+
