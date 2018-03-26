@@ -28,7 +28,7 @@ namespace edurolp{
             this->_solved = this->is_solved();
         }
         /**
-         * Constuctor for allowing being initialized with this {{RED, RED, RED}, {RED, RED, RED}, {RED, RED, RED}}
+         * @brief Constuctor for allowing being initialized with this {{RED, RED, RED}, {RED, RED, RED}, {RED, RED, RED}}
          * @param data Matrix data
          */
         Face(const std::initializer_list<std::initializer_list<Color> > &data) {
@@ -59,6 +59,74 @@ namespace edurolp{
                     if(j != this->get_color())
                         return false;
             return true;
+        }
+        std::vector<Color> get_top_layer() const {
+            return this->_data[0];
+        }
+        std::vector<Color> get_down_layer() const {
+            return this->_data[2];
+        }
+        std::vector<Color> get_right_layer() const {
+            return std::vector<Color>{this->_data[0][2],
+                                      this->_data[1][2],
+                                      this->_data[2][2]};
+        }
+        std::vector<Color> get_left_layer() const {
+            return std::vector<Color>{this->_data[0][0],
+                                      this->_data[1][0],
+                                      this->_data[2][0]};
+        }
+        /// @name Setters
+        /**
+         * @brief Swaps the top layer of the face
+         * @param layer New top layer
+         */
+        void set_top_layer(const std::vector<Color> &layer) {
+            this->_data[0] = layer;
+        }
+        /**
+         * @brief Swaps the down layer of the face
+         * @param layer New down layer
+         */
+        void set_down_layer(const std::vector<Color> &layer) {
+            this->_data[2] = layer;
+        }
+        /**
+         * @brief Swaps the right layer of the face
+         * @param layer New right layer
+         */
+        void set_right_layer(const std::vector<Color> &layer) {
+            for(int i = 0 ; i < 3 ; ++i)
+                this->_data[i][2] = layer[i];
+        }
+        /**
+         * @brief Swaps the left layer of the face
+         * @param layer New left layer
+         */
+        void set_left_layer(const std::vector<Color> &layer) {
+            for(int i = 0 ; i < 3 ; ++i)
+                this->_data[i][0] = layer[i];
+        }
+        /// @name Modify functions
+        /**
+         * @brief Rotates the face clockwise
+         */
+        void rotate_clockwise() {
+            std::vector<std::vector<Color>> tmp = this->get_data();
+            ulong n = 3;
+            for(int i = 0 ; i < n ; ++i)
+                for(int j = 0 ; j < n ; ++j)
+                    this->_data[j][n-i-1] = tmp[i][j];
+        }
+        /**
+         * @brief Rotates the face anti clockwise
+         */
+        void rotate_anti_clockwise() {
+            std::vector<std::vector<Color>> tmp = this->get_data();
+            ulong n = 3;
+            for(int i = 0 ; i < n ; ++i)
+                for(int j = 0 ; j < n ; ++j)
+                    this->_data[n-j-1][i] = tmp[i][j];
         }
     };
 
