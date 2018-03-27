@@ -25,7 +25,7 @@ CMakeFiles/Tests.dir/test/main.cpp.o: googletest-src/googletest/include/gtest/in
 CMakeFiles/Tests.dir/test/main.cpp.o: googletest-src/googletest/include/gtest/internal/gtest-tuple.h
 CMakeFiles/Tests.dir/test/main.cpp.o: googletest-src/googletest/include/gtest/internal/gtest-type-util.h
 
-CMakeFiles/Tests.dir/test/test_colors.cpp.o: ../src/colors.hpp
+CMakeFiles/Tests.dir/test/test_colors.cpp.o: ../src/extra.hpp
 CMakeFiles/Tests.dir/test/test_colors.cpp.o: ../test/test_colors.cpp
 CMakeFiles/Tests.dir/test/test_colors.cpp.o: googletest-src/googletest/include/gtest/gtest-death-test.h
 CMakeFiles/Tests.dir/test/test_colors.cpp.o: googletest-src/googletest/include/gtest/gtest-message.h
@@ -50,8 +50,8 @@ CMakeFiles/Tests.dir/test/test_colors.cpp.o: googletest-src/googletest/include/g
 CMakeFiles/Tests.dir/test/test_colors.cpp.o: googletest-src/googletest/include/gtest/internal/gtest-tuple.h
 CMakeFiles/Tests.dir/test/test_colors.cpp.o: googletest-src/googletest/include/gtest/internal/gtest-type-util.h
 
-CMakeFiles/Tests.dir/test/test_cube.cpp.o: ../src/colors.hpp
 CMakeFiles/Tests.dir/test/test_cube.cpp.o: ../src/cube.hpp
+CMakeFiles/Tests.dir/test/test_cube.cpp.o: ../src/extra.hpp
 CMakeFiles/Tests.dir/test/test_cube.cpp.o: ../src/face.hpp
 CMakeFiles/Tests.dir/test/test_cube.cpp.o: ../test/test_cube.cpp
 CMakeFiles/Tests.dir/test/test_cube.cpp.o: googletest-src/googletest/include/gtest/gtest-death-test.h
@@ -77,7 +77,7 @@ CMakeFiles/Tests.dir/test/test_cube.cpp.o: googletest-src/googletest/include/gte
 CMakeFiles/Tests.dir/test/test_cube.cpp.o: googletest-src/googletest/include/gtest/internal/gtest-tuple.h
 CMakeFiles/Tests.dir/test/test_cube.cpp.o: googletest-src/googletest/include/gtest/internal/gtest-type-util.h
 
-CMakeFiles/Tests.dir/test/test_face.cpp.o: ../src/colors.hpp
+CMakeFiles/Tests.dir/test/test_face.cpp.o: ../src/extra.hpp
 CMakeFiles/Tests.dir/test/test_face.cpp.o: ../src/face.hpp
 CMakeFiles/Tests.dir/test/test_face.cpp.o: ../test/test_face.cpp
 CMakeFiles/Tests.dir/test/test_face.cpp.o: googletest-src/googletest/include/gtest/gtest-death-test.h

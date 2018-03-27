@@ -1,6 +1,8 @@
 #include <iostream>
 #include "cube.hpp"
+
 int main() {
-    std::cout << "Hello, World!" << std::endl;
+    edurolp::Cube c;
+    std::cout << c << std::endl;
     return 0;
 }

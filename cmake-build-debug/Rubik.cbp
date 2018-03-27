@@ -386,10 +386,10 @@
 		<Unit filename="/home/i32ropie/Dropbox/Proyectos/Rubik/cmake-build-debug/googletest-src/googletest/src/gtest_main.cc">
 			<Option target="gtest_main"/>
 		</Unit>
-		<Unit filename="/home/i32ropie/Dropbox/Proyectos/Rubik/src/colors.hpp">
+		<Unit filename="/home/i32ropie/Dropbox/Proyectos/Rubik/src/cube.hpp">
 			<Option target="Rubik"/>
 		</Unit>
-		<Unit filename="/home/i32ropie/Dropbox/Proyectos/Rubik/src/cube.hpp">
+		<Unit filename="/home/i32ropie/Dropbox/Proyectos/Rubik/src/extra.hpp">
 			<Option target="Rubik"/>
 		</Unit>
 		<Unit filename="/home/i32ropie/Dropbox/Proyectos/Rubik/src/face.hpp">

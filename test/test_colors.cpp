@@ -3,7 +3,7 @@
 //
 
 #include <gtest/gtest.h>
-#include "../src/colors.hpp"
+#include "../src/extra.hpp"
 
 TEST(Colors, colors_check){
     EXPECT_EQ(WHITE, 1);

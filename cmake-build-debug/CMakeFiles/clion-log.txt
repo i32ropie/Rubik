@@ -3,10 +3,7 @@
 -- Generating done
 -- Build files have been written to: /home/i32ropie/Dropbox/Proyectos/Rubik/cmake-build-debug/googletest-download
 [ 11%] Performing update step for 'googletest'
-Desde https://github.com/google/googletest
-   dfa853b..7857975  master     -> origin/master
-Primero, rebobinando head para reproducir tu trabajo en la cima de él...
-Avance rápido de master a origin/master.
+La rama actual master está actualizada.
 [ 22%] No configure step for 'googletest'
 [ 33%] No build step for 'googletest'
 [ 44%] No install step for 'googletest'

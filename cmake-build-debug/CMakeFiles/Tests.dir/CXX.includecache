@@ -6,21 +6,25 @@
 
 #IncludeRegexTransform: 
 
-/home/i32ropie/Dropbox/Proyectos/Rubik/src/colors.hpp
-
 /home/i32ropie/Dropbox/Proyectos/Rubik/src/cube.hpp
 vector
 -
+extra.hpp
+/home/i32ropie/Dropbox/Proyectos/Rubik/src/extra.hpp
 face.hpp
 /home/i32ropie/Dropbox/Proyectos/Rubik/src/face.hpp
+
+/home/i32ropie/Dropbox/Proyectos/Rubik/src/extra.hpp
+map
+-
 
 /home/i32ropie/Dropbox/Proyectos/Rubik/src/face.hpp
 vector
 -
 initializer_list
 -
-colors.hpp
-/home/i32ropie/Dropbox/Proyectos/Rubik/src/colors.hpp
+extra.hpp
+/home/i32ropie/Dropbox/Proyectos/Rubik/src/extra.hpp
 
 /home/i32ropie/Dropbox/Proyectos/Rubik/test/main.cpp
 gtest/gtest.h
@@ -29,8 +33,8 @@ gtest/gtest.h
 /home/i32ropie/Dropbox/Proyectos/Rubik/test/test_colors.cpp
 gtest/gtest.h
 -
-../src/colors.hpp
-/home/i32ropie/Dropbox/Proyectos/Rubik/src/colors.hpp
+../src/extra.hpp
+/home/i32ropie/Dropbox/Proyectos/Rubik/src/extra.hpp
 
 /home/i32ropie/Dropbox/Proyectos/Rubik/test/test_cube.cpp
 gtest/gtest.h

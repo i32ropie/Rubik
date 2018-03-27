@@ -24,7 +24,7 @@ include_directories(cmake-build-debug/googletest-src/googletest/include)
 
 
 set(SOURCE_TEST_FILES test/main.cpp test/test_colors.cpp test/test_face.cpp test/test_cube.cpp)
-set(SOURCE_FILES src/main.cpp src/face.hpp src/colors.hpp src/cube.hpp)
+set(SOURCE_FILES src/main.cpp src/face.hpp src/cube.hpp src/extra.hpp)
 add_executable(Rubik ${SOURCE_FILES})
 add_executable(Tests ${SOURCE_TEST_FILES})
 

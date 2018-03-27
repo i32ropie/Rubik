@@ -26,7 +26,7 @@ CMakeFiles/Tests.dir/test/main.cpp.o
  googletest-src/googletest/include/gtest/internal/gtest-tuple.h
  googletest-src/googletest/include/gtest/internal/gtest-type-util.h
 CMakeFiles/Tests.dir/test/test_colors.cpp.o
- /home/i32ropie/Dropbox/Proyectos/Rubik/src/colors.hpp
+ /home/i32ropie/Dropbox/Proyectos/Rubik/src/extra.hpp
  /home/i32ropie/Dropbox/Proyectos/Rubik/test/test_colors.cpp
  googletest-src/googletest/include/gtest/gtest-death-test.h
  googletest-src/googletest/include/gtest/gtest-message.h
@@ -51,8 +51,8 @@ CMakeFiles/Tests.dir/test/test_colors.cpp.o
  googletest-src/googletest/include/gtest/internal/gtest-tuple.h
  googletest-src/googletest/include/gtest/internal/gtest-type-util.h
 CMakeFiles/Tests.dir/test/test_cube.cpp.o
- /home/i32ropie/Dropbox/Proyectos/Rubik/src/colors.hpp
  /home/i32ropie/Dropbox/Proyectos/Rubik/src/cube.hpp
+ /home/i32ropie/Dropbox/Proyectos/Rubik/src/extra.hpp
  /home/i32ropie/Dropbox/Proyectos/Rubik/src/face.hpp
  /home/i32ropie/Dropbox/Proyectos/Rubik/test/test_cube.cpp
  googletest-src/googletest/include/gtest/gtest-death-test.h
@@ -78,7 +78,7 @@ CMakeFiles/Tests.dir/test/test_cube.cpp.o
  googletest-src/googletest/include/gtest/internal/gtest-tuple.h
  googletest-src/googletest/include/gtest/internal/gtest-type-util.h
 CMakeFiles/Tests.dir/test/test_face.cpp.o
- /home/i32ropie/Dropbox/Proyectos/Rubik/src/colors.hpp
+ /home/i32ropie/Dropbox/Proyectos/Rubik/src/extra.hpp
  /home/i32ropie/Dropbox/Proyectos/Rubik/src/face.hpp
  /home/i32ropie/Dropbox/Proyectos/Rubik/test/test_face.cpp
  googletest-src/googletest/include/gtest/gtest-death-test.h

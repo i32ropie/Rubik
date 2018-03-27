@@ -6,21 +6,25 @@
 
 #IncludeRegexTransform: 
 
-/home/i32ropie/Dropbox/Proyectos/Rubik/src/colors.hpp
-
 /home/i32ropie/Dropbox/Proyectos/Rubik/src/cube.hpp
 vector
 -
+extra.hpp
+/home/i32ropie/Dropbox/Proyectos/Rubik/src/extra.hpp
 face.hpp
 /home/i32ropie/Dropbox/Proyectos/Rubik/src/face.hpp
+
+/home/i32ropie/Dropbox/Proyectos/Rubik/src/extra.hpp
+map
+-
 
 /home/i32ropie/Dropbox/Proyectos/Rubik/src/face.hpp
 vector
 -
 initializer_list
 -
-colors.hpp
-/home/i32ropie/Dropbox/Proyectos/Rubik/src/colors.hpp
+extra.hpp
+/home/i32ropie/Dropbox/Proyectos/Rubik/src/extra.hpp
 
 /home/i32ropie/Dropbox/Proyectos/Rubik/src/main.cpp
 iostream

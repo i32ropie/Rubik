@@ -6,9 +6,17 @@
 #define RUBIK_CUBE_HPP
 
 #include <vector>
+#include "extra.hpp"
 #include "face.hpp"
 
 namespace edurolp{
+    std::string operator *(const std::string &s, size_t count){
+        std::string ret;
+        for(size_t i = 0 ; i < count ; ++i){
+            ret += s;
+        }
+        return ret;
+    }
     class Cube{
     private:
         /// White face
@@ -36,7 +44,7 @@ namespace edurolp{
          * @param left Green face
          * @param right Blue face
          */
-        Cube(const Face &top, const Face &front, const Face &down, const Face &back, const Face &left, const Face &right):
+        Cube(Face &top, Face &front, Face &down, Face &back, Face &left, Face &right):
                 _top(top),
                 _front(front),
                 _down(down),
@@ -245,6 +253,76 @@ namespace edurolp{
             this->_right.set_right_layer(tp);
             this->_down.set_down_layer(rt);
             this->_left.set_left_layer(dw);
+        }
+        /**
+         * @brief Function that flips the cube so OLL and PLL algorithms are easier for me to implement
+         */
+        void flip() {
+            this->_top.rotate_clockwise();
+            this->_top.rotate_clockwise();
+
+            this->_down.rotate_clockwise();
+            this->_down.rotate_clockwise();
+
+            this->_front.rotate_clockwise();
+            this->_front.rotate_clockwise();
+
+            this->_back.rotate_clockwise();
+            this->_back.rotate_clockwise();
+
+            this->_right.rotate_clockwise();
+            this->_right.rotate_clockwise();
+
+            this->_left.rotate_clockwise();
+            this->_left.rotate_clockwise();
+
+            Face tmp = this->_right;
+            this->_right = this->_left;
+            this->_left = tmp;
+            tmp = this->_top;
+            this->_top = this->_down;
+            this->_down = tmp;
+        }
+        /// @name Operator overloads
+        friend std::ostream &operator <<(std::ostream &output, const Cube &c) {
+            std::vector<std::vector<Color>> top   = c.get_top().get_data(),
+                                            down  = c.get_down().get_data(),
+                                            front = c.get_front().get_data(),
+                                            back  = c.get_back().get_data(),
+                                            right = c.get_right().get_data(),
+                                            left  = c.get_left().get_data();
+
+            output << "         " << TOP_LEFT_CORNER << (HORIZONTAL_LINE + TOP_SEPARATOR)*2 << HORIZONTAL_LINE << TOP_RIGHT_CORNER << std::endl;
+            for(int i = 0 ; i < 3 ; ++i){
+                output << "         " << VERTICAL_LINE << bg_color[top[i][0]] << VERTICAL_LINE <<  bg_color[top[i][1]] << VERTICAL_LINE << bg_color[top[i][2]] << VERTICAL_LINE << std::endl;
+                if(i < 2)
+                    output << "         " << MID_LEFT_SEPARATOR << (HORIZONTAL_LINE + FULL_SEPARATOR)*2 << HORIZONTAL_LINE << MID_RIGHT_SEPARATOR << std::endl;
+
+            }
+//            output << "         " << VERTICAL_LINE << bg_color[top[1][0]] << VERTICAL_LINE <<  bg_color[top[1][1]] << VERTICAL_LINE << bg_color[top[1][2]] << VERTICAL_LINE << std::endl;
+//            output << "         " << MID_LEFT_SEPARATOR << (HORIZONTAL_LINE + FULL_SEPARATOR)*2 << HORIZONTAL_LINE << MID_RIGHT_SEPARATOR << std::endl;
+//            output << "         " << VERTICAL_LINE << bg_color[top[2][0]] << VERTICAL_LINE <<  bg_color[top[2][1]] << VERTICAL_LINE << bg_color[top[2][2]] << VERTICAL_LINE << std::endl;
+            output << TOP_LEFT_CORNER << (HORIZONTAL_LINE + TOP_SEPARATOR)*2 << HORIZONTAL_LINE << (FULL_SEPARATOR + HORIZONTAL_LINE)*4 << (TOP_SEPARATOR + HORIZONTAL_LINE)*5 << TOP_RIGHT_CORNER << std::endl;
+            for(int i = 0 ; i < 3 ; ++i){
+                for(auto &p: {left, front, right, back}){
+                    for(int j = 0 ; j < 3 ; ++j){
+                        output << VERTICAL_LINE << bg_color[p[i][j]];
+                    }
+                }
+                output << VERTICAL_LINE << std::endl;
+                if(i<2)
+                    output << MID_LEFT_SEPARATOR << (HORIZONTAL_LINE + FULL_SEPARATOR)*11 << HORIZONTAL_LINE << MID_RIGHT_SEPARATOR << std::endl;
+                else
+                    output << DOWN_LEFT_CORNER << (HORIZONTAL_LINE + DOWN_SEPARATOR)*2 << (HORIZONTAL_LINE + FULL_SEPARATOR)*4 << (HORIZONTAL_LINE + DOWN_SEPARATOR)*5 << HORIZONTAL_LINE << DOWN_RIGHT_CORNER << std::endl;
+            }
+            for(int i = 0 ; i < 3 ; ++i){
+                output << "         " << VERTICAL_LINE << bg_color[down[i][0]] << VERTICAL_LINE <<  bg_color[down[i][1]] << VERTICAL_LINE << bg_color[down[i][2]] << VERTICAL_LINE << std::endl;
+                if(i < 2)
+                    output << "         " << MID_LEFT_SEPARATOR << (HORIZONTAL_LINE + FULL_SEPARATOR)*2 << HORIZONTAL_LINE << MID_RIGHT_SEPARATOR << std::endl;
+
+            }
+            output << "         " << DOWN_LEFT_CORNER << (HORIZONTAL_LINE + DOWN_SEPARATOR)*2 << HORIZONTAL_LINE << DOWN_RIGHT_CORNER << std::endl;
+            return output;
         }
     };
 }

@@ -17,16 +17,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="960d49da-8f9c-46fd-8bef-d78ece51b3f8" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/src/extra.hpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Rubik.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Rubik.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Rubik.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Rubik.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Rubik.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Rubik.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Tests.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Tests.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Tests.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Tests.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Tests.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Tests.dir/depend.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Rubik" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Rubik" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Rubik.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Rubik.cbp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Tests" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Tests" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/googletest-src" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/googletest-src" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/colors.hpp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/cube.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/cube.hpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/face.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/face.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_colors.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_colors.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/test_cube.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_cube.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_face.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_face.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -42,8 +52,8 @@
       <file leaf-file-name="cube.hpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/cube.hpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1358">
-              <caret line="140" column="40" selection-start-line="140" selection-start-column="40" selection-end-line="140" selection-end-column="40" />
+            <state relative-caret-position="1295">
+              <caret line="323" column="79" selection-start-line="323" selection-start-column="79" selection-end-line="323" selection-end-column="79" />
               <folding>
                 <element signature="e#90#107#0" expanded="true" />
               </folding>
@@ -51,23 +61,62 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.md">
+      <file leaf-file-name="test_cube.cpp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test/test_cube.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="34" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
+            <state relative-caret-position="262">
+              <caret line="890" column="35" selection-start-line="890" selection-start-column="35" selection-end-line="890" selection-end-column="35" />
+              <folding>
+                <element signature="e#43#67#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test_cube.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/test_cube.cpp">
+      <file leaf-file-name="face.hpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/face.hpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="301" column="54" selection-start-line="301" selection-start-column="54" selection-end-line="301" selection-end-column="54" />
+            <state relative-caret-position="-1628">
+              <caret line="8" column="27" lean-forward="true" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="extra.hpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/extra.hpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="277">
+              <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="20" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
               <folding>
-                <element signature="e#43#67#0" expanded="true" />
+                <element signature="e#0#19#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CMakeLists.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="20" selection-start-line="20" selection-end-line="20" />
             </state>
           </provider>
         </entry>
@@ -95,14 +144,15 @@
         <option value="$PROJECT_DIR$/CMakeLists.txt.in" />
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/test/main.cpp" />
-        <option value="$PROJECT_DIR$/test/test_colors.cpp" />
-        <option value="$PROJECT_DIR$/src/main.cpp" />
-        <option value="$PROJECT_DIR$/src/colors.hpp" />
         <option value="$PROJECT_DIR$/src/extra_functions.hpp" />
         <option value="$PROJECT_DIR$/test/test_face.cpp" />
-        <option value="$PROJECT_DIR$/src/face.hpp" />
-        <option value="$PROJECT_DIR$/src/cube.hpp" />
         <option value="$PROJECT_DIR$/test/test_cube.cpp" />
+        <option value="$PROJECT_DIR$/src/colors.hpp" />
+        <option value="$PROJECT_DIR$/src/face.hpp" />
+        <option value="$PROJECT_DIR$/test/test_colors.cpp" />
+        <option value="$PROJECT_DIR$/src/extra.hpp" />
+        <option value="$PROJECT_DIR$/src/cube.hpp" />
+        <option value="$PROJECT_DIR$/src/main.cpp" />
         <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
@@ -174,11 +224,12 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Tests">
-    <configuration name="Face.layers_swapping" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Rubik" TARGET_NAME="Tests" RUN_TARGET_PROJECT_NAME="Rubik" RUN_TARGET_NAME="Tests" TEST_CLASS="Face" TEST_METHOD="layers_swapping" TEST_MODE="SUITE_TEST" />
+  <component name="RunManager" selected="Application.Rubik">
+    <configuration name="Cube.flip" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Rubik" TARGET_NAME="Tests" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Rubik" RUN_TARGET_NAME="Tests" TEST_CLASS="Cube" TEST_METHOD="flip" TEST_MODE="SUITE_TEST" />
+    <configuration name="Face.layers_swapping" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Rubik" TARGET_NAME="Tests" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Rubik" RUN_TARGET_NAME="Tests" TEST_CLASS="Face" TEST_METHOD="layers_swapping" TEST_MODE="SUITE_TEST" />
     <configuration name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Rubik" RUN_TARGET_NAME="Rubik" EXPLICIT_BUILD_TARGET_NAME="all" />
     <configuration name="Rubik" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Rubik" TARGET_NAME="Rubik" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Rubik" RUN_TARGET_NAME="Rubik" />
-    <configuration name="Tests" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Rubik" TARGET_NAME="Tests" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Rubik" RUN_TARGET_NAME="Tests" />
+    <configuration name="Tests" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="--gtest_color=yes" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Rubik" TARGET_NAME="Tests" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Rubik" RUN_TARGET_NAME="Tests" />
     <configuration name="gmock" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Rubik" TARGET_NAME="gmock" CONFIG_NAME="Debug" />
     <configuration name="gmock_main" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Rubik" TARGET_NAME="gmock_main" CONFIG_NAME="Debug" />
     <configuration name="gtest" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Rubik" TARGET_NAME="gtest" CONFIG_NAME="Debug" />
@@ -192,9 +243,11 @@
       <item itemvalue="Application.gtest" />
       <item itemvalue="Application.gtest_main" />
       <item itemvalue="Google Test.Face.layers_swapping" />
+      <item itemvalue="Google Test.Cube.flip" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Google Test.Cube.flip" />
         <item itemvalue="Google Test.Face.layers_swapping" />
       </list>
     </recent_temporary>
@@ -214,34 +267,44 @@
       <workItem from="1521995915026" duration="37000" />
       <workItem from="1522006746052" duration="10566000" />
       <workItem from="1522083187671" duration="13080000" />
+      <workItem from="1522152655519" duration="7602000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Face_layers_swapping - 2018.03.26 at 20h 50m 03s.xml">
-      <configuration name="Face.layers_swapping" configurationId="CMakeGoogleTestRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Face_layers_swapping - 2018.03.26 at 20h 50m 29s.xml">
-      <configuration name="Face.layers_swapping" configurationId="CMakeGoogleTestRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Face_layers_swapping - 2018.03.26 at 21h 42m 01s.xml">
-      <configuration name="Face.layers_swapping" configurationId="CMakeGoogleTestRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Face_layers_swapping - 2018.03.27 at 00h 42m 01s.xml">
-      <configuration name="Face.layers_swapping" configurationId="CMakeGoogleTestRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Face_layers_swapping - 2018.03.27 at 00h 42m 21s.xml">
-      <configuration name="Face.layers_swapping" configurationId="CMakeGoogleTestRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Face_layers_swapping - 2018.03.27 at 00h 43m 34s.xml">
-      <configuration name="Face.layers_swapping" configurationId="CMakeGoogleTestRunConfigurationType" />
-    </history-entry>
     <history-entry file="Face_layers_swapping - 2018.03.27 at 00h 43m 37s.xml">
       <configuration name="Face.layers_swapping" configurationId="CMakeGoogleTestRunConfigurationType" />
     </history-entry>
+    <history-entry file="Cube_flip - 2018.03.27 at 10h 43m 15s.xml">
+      <configuration name="Cube.flip" configurationId="CMakeGoogleTestRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Cube_flip - 2018.03.27 at 10h 43m 49s.xml">
+      <configuration name="Cube.flip" configurationId="CMakeGoogleTestRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Cube_flip - 2018.03.27 at 10h 44m 37s.xml">
+      <configuration name="Cube.flip" configurationId="CMakeGoogleTestRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Cube_flip - 2018.03.27 at 10h 46m 38s.xml">
+      <configuration name="Cube.flip" configurationId="CMakeGoogleTestRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Cube_flip - 2018.03.27 at 10h 46m 42s.xml">
+      <configuration name="Cube.flip" configurationId="CMakeGoogleTestRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Cube_flip - 2018.03.27 at 10h 49m 20s.xml">
+      <configuration name="Cube.flip" configurationId="CMakeGoogleTestRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Cube_flip - 2018.03.27 at 10h 50m 13s.xml">
+      <configuration name="Cube.flip" configurationId="CMakeGoogleTestRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Cube_flip - 2018.03.27 at 10h 53m 22s.xml">
+      <configuration name="Cube.flip" configurationId="CMakeGoogleTestRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Cube_flip - 2018.03.27 at 10h 53m 59s.xml">
+      <configuration name="Cube.flip" configurationId="CMakeGoogleTestRunConfigurationType" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24853000" />
+    <option name="totallyTimeSpent" value="44032000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="10" y="10" width="1346" height="729" extended-state="0" />
@@ -252,7 +315,6 @@
       <window_info anchor="bottom" id="Messages" order="7" visible="true" weight="0.32961783" />
       <window_info anchor="bottom" id="CMake" order="11" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32961783" />
       <window_info anchor="bottom" id="Version Control" order="10" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32961783" />
       <window_info id="Structure" order="1" sideWeight="0.47292992" side_tool="true" weight="0.19448584" />
@@ -265,25 +327,26 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32961783" />
     </layout>
     <layout-to-restore>
-      <window_info anchor="bottom" id="CMake" order="11" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.52707005" visible="true" weight="0.19448584" />
-      <window_info id="Structure" order="1" sideWeight="0.47292992" side_tool="true" visible="true" weight="0.19448584" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="10" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32961783" />
-      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.52707005" visible="true" weight="0.19448584" />
+      <window_info id="Structure" order="1" sideWeight="0.47292992" side_tool="true" weight="0.19448584" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32961783" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39968154" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.32961783" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32961783" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.32961783" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="CMake" order="11" />
       <window_info id="Favorites" order="2" side_tool="true" />
     </layout-to-restore>
   </component>
@@ -294,13 +357,71 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/colors.hpp">
+    <entry file="file://$PROJECT_DIR$/src/cube.hpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="16" lean-forward="true" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
+        <state relative-caret-position="4305">
+          <caret line="287" selection-start-line="287" selection-end-line="287" />
+          <folding>
+            <element signature="e#90#107#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/test/test_cube.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="13350">
+          <caret line="890" column="35" selection-start-line="890" selection-start-column="35" selection-end-line="890" selection-end-column="35" />
+          <folding>
+            <element signature="e#43#67#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cube.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2100">
+          <caret line="140" column="40" selection-start-line="140" selection-start-column="12" selection-end-line="140" selection-end-column="43" />
+          <folding>
+            <element signature="e#90#107#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="34" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/test_cube.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4515">
+          <caret line="301" column="54" selection-start-line="301" selection-start-column="54" selection-end-line="301" selection-end-column="54" />
+          <folding>
+            <element signature="e#43#67#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/test_face.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1305">
+          <caret line="87" column="23" selection-start-line="87" selection-start-column="23" selection-end-line="87" selection-end-column="23" />
+          <folding>
+            <element signature="e#43#67#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/face.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1605">
+          <caret line="107" column="32" selection-start-line="107" selection-start-column="32" selection-end-line="107" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/colors.hpp" />
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
@@ -364,13 +485,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/test_colors.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="24" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -392,33 +506,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/colors.hpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/extra_functions.hpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" selection-start-line="7" selection-end-line="9" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/face.hpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="107" column="32" selection-start-line="107" selection-start-column="32" selection-end-line="107" selection-end-column="32" />
-          <folding>
-            <element signature="e#90#107#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/extra_functions.hpp" />
     <entry file="file://$PROJECT_DIR$/test/test_face.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
+        <state relative-caret-position="82">
           <caret line="87" column="23" selection-start-line="87" selection-start-column="23" selection-end-line="87" selection-end-column="23" />
           <folding>
             <element signature="e#43#67#0" expanded="true" />
@@ -426,20 +517,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/test_cube.cpp">
+    <entry file="file://$PROJECT_DIR$/src/colors.hpp" />
+    <entry file="file://$PROJECT_DIR$/test/test_colors.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="301" column="54" selection-start-line="301" selection-start-column="54" selection-end-line="301" selection-end-column="54" />
-          <folding>
-            <element signature="e#43#67#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="180">
+          <caret line="13" column="24" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/face.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-143">
+          <caret line="107" column="32" selection-start-line="107" selection-start-column="32" selection-end-line="107" selection-end-column="32" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/cube.hpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1358">
-          <caret line="140" column="40" selection-start-line="140" selection-start-column="40" selection-end-line="140" selection-end-column="40" />
+        <state relative-caret-position="-1028">
+          <caret line="165" column="40" selection-start-line="165" selection-start-column="40" selection-end-line="165" selection-end-column="40" />
           <folding>
             <element signature="e#90#107#0" expanded="true" />
           </folding>
@@ -448,8 +544,169 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="34" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
+        <state relative-caret-position="60">
+          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/test_cube.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-38">
+          <caret line="843" column="46" selection-start-line="843" selection-start-column="46" selection-end-line="843" selection-end-column="46" />
+          <folding>
+            <element signature="e#43#67#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/colors.hpp" />
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="27" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="27" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="27" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt.in">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="1" selection-start-line="14" selection-end-line="14" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/googletest-src/googletest/include/gtest/internal/gtest-internal.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="1253" column="8" selection-start-line="1253" selection-start-column="8" selection-end-line="1253" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/googletest-src/googletest/include/gtest/gtest.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="2257" column="8" lean-forward="true" selection-start-line="2257" selection-start-column="8" selection-end-line="2257" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/extra_functions.hpp" />
+    <entry file="file://$PROJECT_DIR$/src/colors.hpp" />
+    <entry file="file://$PROJECT_DIR$/test/test_face.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1305">
+          <caret line="87" column="23" selection-start-line="87" selection-start-column="23" selection-end-line="87" selection-end-column="23" />
+          <folding>
+            <element signature="e#43#67#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/test_colors.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="24" lean-forward="true" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
+          <folding>
+            <element signature="e#43#67#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="20" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cube.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1295">
+          <caret line="323" column="79" selection-start-line="323" selection-start-column="79" selection-end-line="323" selection-end-column="79" />
+          <folding>
+            <element signature="e#90#107#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/face.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1628">
+          <caret line="8" column="27" lean-forward="true" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/extra.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/test_cube.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="890" column="35" selection-start-line="890" selection-start-column="35" selection-end-line="890" selection-end-column="35" />
+          <folding>
+            <element signature="e#43#67#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

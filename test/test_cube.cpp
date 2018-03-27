@@ -862,3 +862,31 @@ TEST(Cube, moveset_b_prime){
     c.B_prime();
     EXPECT_EQ(c.is_solved(), true);
 }
+
+TEST(Cube, flip){
+    edurolp::Cube c;
+    EXPECT_EQ(c.is_solved(), true);
+    // R move and flip it and expect to have yellow face on top with left layer changed to orange
+    c.R();
+    c.flip();
+    edurolp::Face f1{{ORANGE, YELLOW, YELLOW},
+                     {ORANGE, YELLOW, YELLOW},
+                     {ORANGE, YELLOW, YELLOW}};
+    edurolp::Face f2{{YELLOW, RED, RED},
+                     {YELLOW, RED, RED},
+                     {YELLOW, RED, RED}};
+    edurolp::Face f3{{RED, WHITE, WHITE},
+                     {RED, WHITE, WHITE},
+                     {RED, WHITE, WHITE}};
+    edurolp::Face f4{{ORANGE, ORANGE, WHITE},
+                     {ORANGE, ORANGE, WHITE},
+                     {ORANGE, ORANGE, WHITE}};
+    EXPECT_EQ(c.get_top().get_data(), f1.get_data());
+    EXPECT_EQ(c.get_front().get_data(), f2.get_data());
+    EXPECT_EQ(c.get_down().get_data(), f3.get_data());
+    EXPECT_EQ(c.get_back().get_data(), f4.get_data());
+    // L' move and flip it and expect to have the cube solved
+    c.L_prime();
+    c.flip();
+    EXPECT_EQ(c.is_solved(), true);
+}

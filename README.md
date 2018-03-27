@@ -4,7 +4,7 @@
 # TODO
 - [x] Tests for all movesets
 - [ ] Validate if the cube is valid
-- [ ] Overload operator to print cube objects with colors
+- [x] Overload operator to print cube objects with colors
 - [ ] Implement OLL + tests
 - [ ] Implement PLL + tests
 
