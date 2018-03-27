@@ -8,11 +8,11 @@
 
 TEST(Cube, cube_unsolved){
     edurolp::Face   top({{RED, WHITE, WHITE}, {WHITE, WHITE, WHITE}, {WHITE, WHITE, WHITE}}),
-                    front({{WHITE, RED, RED}, {RED, RED, RED}, {RED, RED, RED}}),
-                    bot({{RED, YELLOW, YELLOW}, {YELLOW, YELLOW, YELLOW}, {YELLOW, YELLOW, YELLOW}}),
-                    back({{RED, ORANGE, ORANGE}, {ORANGE, ORANGE, ORANGE}, {ORANGE, ORANGE, ORANGE}}),
-                    left({{RED, GREEN, GREEN}, {GREEN, GREEN, GREEN}, {GREEN, GREEN, GREEN}}),
-                    right({{RED, BLUE, BLUE}, {BLUE, BLUE, BLUE}, {BLUE, BLUE, BLUE}});
+            front({{WHITE, RED, RED}, {RED, RED, RED}, {RED, RED, RED}}),
+            bot({{RED, YELLOW, YELLOW}, {YELLOW, YELLOW, YELLOW}, {YELLOW, YELLOW, YELLOW}}),
+            back({{RED, ORANGE, ORANGE}, {ORANGE, ORANGE, ORANGE}, {ORANGE, ORANGE, ORANGE}}),
+            left({{RED, GREEN, GREEN}, {GREEN, GREEN, GREEN}, {GREEN, GREEN, GREEN}}),
+            right({{RED, BLUE, BLUE}, {BLUE, BLUE, BLUE}, {BLUE, BLUE, BLUE}});
 
     edurolp::Cube c1(top, front, bot, back, left, right);
     edurolp::Cube c2({{RED, WHITE, WHITE}, {WHITE, WHITE, WHITE}, {WHITE, WHITE, WHITE}},
@@ -28,11 +28,11 @@ TEST(Cube, cube_unsolved){
 
 TEST(Cube, cube_solved){
     edurolp::Face   top({{WHITE, WHITE, WHITE}, {WHITE, WHITE, WHITE}, {WHITE, WHITE, WHITE}}),
-                    front({{RED, RED, RED}, {RED, RED, RED}, {RED, RED, RED}}),
-                    bot({{YELLOW, YELLOW, YELLOW}, {YELLOW, YELLOW, YELLOW}, {YELLOW, YELLOW, YELLOW}}),
-                    back({{ORANGE, ORANGE, ORANGE}, {ORANGE, ORANGE, ORANGE}, {ORANGE, ORANGE, ORANGE}}),
-                    left({{GREEN, GREEN, GREEN}, {GREEN, GREEN, GREEN}, {GREEN, GREEN, GREEN}}),
-                    right({{BLUE, BLUE, BLUE}, {BLUE, BLUE, BLUE}, {BLUE, BLUE, BLUE}});
+            front({{RED, RED, RED}, {RED, RED, RED}, {RED, RED, RED}}),
+            bot({{YELLOW, YELLOW, YELLOW}, {YELLOW, YELLOW, YELLOW}, {YELLOW, YELLOW, YELLOW}}),
+            back({{ORANGE, ORANGE, ORANGE}, {ORANGE, ORANGE, ORANGE}, {ORANGE, ORANGE, ORANGE}}),
+            left({{GREEN, GREEN, GREEN}, {GREEN, GREEN, GREEN}, {GREEN, GREEN, GREEN}}),
+            right({{BLUE, BLUE, BLUE}, {BLUE, BLUE, BLUE}, {BLUE, BLUE, BLUE}});
 
     edurolp::Cube c1(top, front, bot, back, left, right);
     edurolp::Cube c2({{WHITE, WHITE, WHITE}, {WHITE, WHITE, WHITE}, {WHITE, WHITE, WHITE}},
@@ -53,6 +53,7 @@ TEST(Cube, moveset_r){
     EXPECT_EQ(c.is_solved(), true);
     c.R();
     EXPECT_EQ(c.is_solved(), false);
+    EXPECT_EQ(c.get_right().is_solved(), true);
     for(auto &p: {RED, WHITE, ORANGE, YELLOW}) {
         tmp = {p, p, p};
         switch (p){
@@ -72,6 +73,7 @@ TEST(Cube, moveset_r){
     }
     c.R();
     EXPECT_EQ(c.is_solved(), false);
+    EXPECT_EQ(c.get_right().is_solved(), true);
     for(auto &p: {RED, WHITE, ORANGE, YELLOW}) {
         tmp = {p, p, p};
         switch (p){
@@ -91,6 +93,7 @@ TEST(Cube, moveset_r){
     }
     c.R();
     EXPECT_EQ(c.is_solved(), false);
+    EXPECT_EQ(c.get_right().is_solved(), true);
     for(auto &p: {RED, WHITE, ORANGE, YELLOW}) {
         tmp = {p, p, p};
         switch (p){
@@ -118,6 +121,7 @@ TEST(Cube, moveset_r_prime){
     EXPECT_EQ(c.is_solved(), true);
     c.R_prime();
     EXPECT_EQ(c.is_solved(), false);
+    EXPECT_EQ(c.get_right().is_solved(), true);
     for(auto &p: {RED, WHITE, ORANGE, YELLOW}) {
         tmp = {p, p, p};
         switch (p){
@@ -137,6 +141,7 @@ TEST(Cube, moveset_r_prime){
     }
     c.R_prime();
     EXPECT_EQ(c.is_solved(), false);
+    EXPECT_EQ(c.get_right().is_solved(), true);
     for(auto &p: {RED, WHITE, ORANGE, YELLOW}) {
         tmp = {p, p, p};
         switch (p){
@@ -156,6 +161,7 @@ TEST(Cube, moveset_r_prime){
     }
     c.R_prime();
     EXPECT_EQ(c.is_solved(), false);
+    EXPECT_EQ(c.get_right().is_solved(), true);
     for(auto &p: {RED, WHITE, ORANGE, YELLOW}) {
         tmp = {p, p, p};
         switch (p){
@@ -183,6 +189,7 @@ TEST(Cube, moveset_l){
     EXPECT_EQ(c.is_solved(), true);
     c.L();
     EXPECT_EQ(c.is_solved(), false);
+    EXPECT_EQ(c.get_left().is_solved(), true);
     for(auto &p: {RED, WHITE, ORANGE, YELLOW}) {
         tmp = {p, p, p};
         switch (p){
@@ -202,6 +209,7 @@ TEST(Cube, moveset_l){
     }
     c.L();
     EXPECT_EQ(c.is_solved(), false);
+    EXPECT_EQ(c.get_left().is_solved(), true);
     for(auto &p: {RED, WHITE, ORANGE, YELLOW}) {
         tmp = {p, p, p};
         switch (p){
@@ -221,6 +229,7 @@ TEST(Cube, moveset_l){
     }
     c.L();
     EXPECT_EQ(c.is_solved(), false);
+    EXPECT_EQ(c.get_left().is_solved(), true);
     for(auto &p: {RED, WHITE, ORANGE, YELLOW}) {
         tmp = {p, p, p};
         switch (p){
@@ -248,6 +257,7 @@ TEST(Cube, moveset_l_prime){
     EXPECT_EQ(c.is_solved(), true);
     c.L_prime();
     EXPECT_EQ(c.is_solved(), false);
+    EXPECT_EQ(c.get_left().is_solved(), true);
     for(auto &p: {RED, WHITE, ORANGE, YELLOW}) {
         tmp = {p, p, p};
         switch (p){
@@ -267,6 +277,7 @@ TEST(Cube, moveset_l_prime){
     }
     c.L_prime();
     EXPECT_EQ(c.is_solved(), false);
+    EXPECT_EQ(c.get_left().is_solved(), true);
     for(auto &p: {RED, WHITE, ORANGE, YELLOW}) {
         tmp = {p, p, p};
         switch (p){
@@ -286,6 +297,7 @@ TEST(Cube, moveset_l_prime){
     }
     c.L_prime();
     EXPECT_EQ(c.is_solved(), false);
+    EXPECT_EQ(c.get_left().is_solved(), true);
     for(auto &p: {RED, WHITE, ORANGE, YELLOW}) {
         tmp = {p, p, p};
         switch (p){
@@ -304,5 +316,549 @@ TEST(Cube, moveset_l_prime){
         }
     }
     c.L_prime();
+    EXPECT_EQ(c.is_solved(), true);
+}
+
+TEST(Cube, moveset_u){
+    std::vector<Color> tmp;
+    edurolp::Cube c;
+    EXPECT_EQ(c.is_solved(), true);
+    c.U();
+    EXPECT_EQ(c.is_solved(), false);
+    EXPECT_EQ(c.get_top().is_solved(), true);
+    for(auto &p: {RED, BLUE, ORANGE, GREEN}) {
+        tmp = {p, p, p};
+        switch (p){
+            case RED:
+                EXPECT_EQ(c.get_left().get_top_layer(), tmp);
+                break;
+            case BLUE:
+                EXPECT_EQ(c.get_front().get_top_layer(), tmp);
+                break;
+            case ORANGE:
+                EXPECT_EQ(c.get_right().get_top_layer(), tmp);
+                break;
+            case GREEN:
+                EXPECT_EQ(c.get_back().get_top_layer(), tmp);
+                break;
+        }
+    }
+    c.U();
+    EXPECT_EQ(c.is_solved(), false);
+    EXPECT_EQ(c.get_top().is_solved(), true);
+    for(auto &p: {RED, WHITE, ORANGE, YELLOW}) {
+        tmp = {p, p, p};
+        switch (p){
+            case BLUE:
+                EXPECT_EQ(c.get_left().get_top_layer(), tmp);
+                break;
+            case ORANGE:
+                EXPECT_EQ(c.get_front().get_top_layer(), tmp);
+                break;
+            case GREEN:
+                EXPECT_EQ(c.get_right().get_top_layer(), tmp);
+                break;
+            case RED:
+                EXPECT_EQ(c.get_back().get_top_layer(), tmp);
+                break;
+        }
+    }
+    c.U();
+    EXPECT_EQ(c.is_solved(), false);
+    EXPECT_EQ(c.get_top().is_solved(), true);
+    for(auto &p: {RED, WHITE, ORANGE, YELLOW}) {
+        tmp = {p, p, p};
+        switch (p){
+            case ORANGE:
+                EXPECT_EQ(c.get_left().get_top_layer(), tmp);
+                break;
+            case GREEN:
+                EXPECT_EQ(c.get_front().get_top_layer(), tmp);
+                break;
+            case RED:
+                EXPECT_EQ(c.get_right().get_top_layer(), tmp);
+                break;
+            case BLUE:
+                EXPECT_EQ(c.get_back().get_top_layer(), tmp);
+                break;
+        }
+    }
+    c.U();
+    EXPECT_EQ(c.is_solved(), true);
+}
+
+TEST(Cube, moveset_u_prime){
+    std::vector<Color> tmp;
+    edurolp::Cube c;
+    EXPECT_EQ(c.is_solved(), true);
+    c.U_prime();
+    EXPECT_EQ(c.is_solved(), false);
+    EXPECT_EQ(c.get_top().is_solved(), true);
+    for(auto &p: {RED, BLUE, ORANGE, GREEN}) {
+        tmp = {p, p, p};
+        switch (p){
+            case ORANGE:
+                EXPECT_EQ(c.get_left().get_top_layer(), tmp);
+                break;
+            case GREEN:
+                EXPECT_EQ(c.get_front().get_top_layer(), tmp);
+                break;
+            case RED:
+                EXPECT_EQ(c.get_right().get_top_layer(), tmp);
+                break;
+            case BLUE:
+                EXPECT_EQ(c.get_back().get_top_layer(), tmp);
+                break;
+        }
+    }
+    c.U_prime();
+    EXPECT_EQ(c.is_solved(), false);
+    EXPECT_EQ(c.get_top().is_solved(), true);
+    for(auto &p: {RED, WHITE, ORANGE, YELLOW}) {
+        tmp = {p, p, p};
+        switch (p){
+            case BLUE:
+                EXPECT_EQ(c.get_left().get_top_layer(), tmp);
+                break;
+            case ORANGE:
+                EXPECT_EQ(c.get_front().get_top_layer(), tmp);
+                break;
+            case GREEN:
+                EXPECT_EQ(c.get_right().get_top_layer(), tmp);
+                break;
+            case RED:
+                EXPECT_EQ(c.get_back().get_top_layer(), tmp);
+                break;
+        }
+    }
+    c.U_prime();
+    EXPECT_EQ(c.is_solved(), false);
+    EXPECT_EQ(c.get_top().is_solved(), true);
+    for(auto &p: {RED, WHITE, ORANGE, YELLOW}) {
+        tmp = {p, p, p};
+        switch (p){
+            case RED:
+                EXPECT_EQ(c.get_left().get_top_layer(), tmp);
+                break;
+            case BLUE:
+                EXPECT_EQ(c.get_front().get_top_layer(), tmp);
+                break;
+            case ORANGE:
+                EXPECT_EQ(c.get_right().get_top_layer(), tmp);
+                break;
+            case GREEN:
+                EXPECT_EQ(c.get_back().get_top_layer(), tmp);
+                break;
+        }
+    }
+    c.U_prime();
+    EXPECT_EQ(c.is_solved(), true);
+}
+
+TEST(Cube, moveset_d){
+    std::vector<Color> tmp;
+    edurolp::Cube c;
+    EXPECT_EQ(c.is_solved(), true);
+    c.D();
+    EXPECT_EQ(c.is_solved(), false);
+    EXPECT_EQ(c.get_down().is_solved(), true);
+    for(auto &p: {RED, BLUE, ORANGE, GREEN}) {
+        tmp = {p, p, p};
+        switch (p){
+            case ORANGE:
+                EXPECT_EQ(c.get_left().get_down_layer(), tmp);
+                break;
+            case GREEN:
+                EXPECT_EQ(c.get_front().get_down_layer(), tmp);
+                break;
+            case RED:
+                EXPECT_EQ(c.get_right().get_down_layer(), tmp);
+                break;
+            case BLUE:
+                EXPECT_EQ(c.get_back().get_down_layer(), tmp);
+                break;
+        }
+    }
+    c.D();
+    EXPECT_EQ(c.is_solved(), false);
+    EXPECT_EQ(c.get_down().is_solved(), true);
+    for(auto &p: {RED, WHITE, ORANGE, YELLOW}) {
+        tmp = {p, p, p};
+        switch (p){
+            case BLUE:
+                EXPECT_EQ(c.get_left().get_down_layer(), tmp);
+                break;
+            case ORANGE:
+                EXPECT_EQ(c.get_front().get_down_layer(), tmp);
+                break;
+            case GREEN:
+                EXPECT_EQ(c.get_right().get_down_layer(), tmp);
+                break;
+            case RED:
+                EXPECT_EQ(c.get_back().get_down_layer(), tmp);
+                break;
+        }
+    }
+    c.D();
+    EXPECT_EQ(c.is_solved(), false);
+    EXPECT_EQ(c.get_down().is_solved(), true);
+    for(auto &p: {RED, WHITE, ORANGE, YELLOW}) {
+        tmp = {p, p, p};
+        switch (p){
+            case RED:
+                EXPECT_EQ(c.get_left().get_down_layer(), tmp);
+                break;
+            case BLUE:
+                EXPECT_EQ(c.get_front().get_down_layer(), tmp);
+                break;
+            case ORANGE:
+                EXPECT_EQ(c.get_right().get_down_layer(), tmp);
+                break;
+            case GREEN:
+                EXPECT_EQ(c.get_back().get_down_layer(), tmp);
+                break;
+        }
+    }
+    c.D();
+    EXPECT_EQ(c.is_solved(), true);
+}
+
+TEST(Cube, moveset_d_prime){
+    std::vector<Color> tmp;
+    edurolp::Cube c;
+    EXPECT_EQ(c.is_solved(), true);
+    c.D_prime();
+    EXPECT_EQ(c.is_solved(), false);
+    EXPECT_EQ(c.get_top().is_solved(), true);
+    for(auto &p: {RED, BLUE, ORANGE, GREEN}) {
+        tmp = {p, p, p};
+        switch (p){
+            case RED:
+                EXPECT_EQ(c.get_left().get_down_layer(), tmp);
+                break;
+            case BLUE:
+                EXPECT_EQ(c.get_front().get_down_layer(), tmp);
+                break;
+            case ORANGE:
+                EXPECT_EQ(c.get_right().get_down_layer(), tmp);
+                break;
+            case GREEN:
+                EXPECT_EQ(c.get_back().get_down_layer(), tmp);
+                break;
+        }
+    }
+    c.D_prime();
+    EXPECT_EQ(c.is_solved(), false);
+    EXPECT_EQ(c.get_top().is_solved(), true);
+    for(auto &p: {RED, WHITE, ORANGE, YELLOW}) {
+        tmp = {p, p, p};
+        switch (p){
+            case BLUE:
+                EXPECT_EQ(c.get_left().get_down_layer(), tmp);
+                break;
+            case ORANGE:
+                EXPECT_EQ(c.get_front().get_down_layer(), tmp);
+                break;
+            case GREEN:
+                EXPECT_EQ(c.get_right().get_down_layer(), tmp);
+                break;
+            case RED:
+                EXPECT_EQ(c.get_back().get_down_layer(), tmp);
+                break;
+        }
+    }
+    c.D_prime();
+    EXPECT_EQ(c.is_solved(), false);
+    EXPECT_EQ(c.get_top().is_solved(), true);
+    for(auto &p: {RED, WHITE, ORANGE, YELLOW}) {
+        tmp = {p, p, p};
+        switch (p){
+            case ORANGE:
+                EXPECT_EQ(c.get_left().get_down_layer(), tmp);
+                break;
+            case GREEN:
+                EXPECT_EQ(c.get_front().get_down_layer(), tmp);
+                break;
+            case RED:
+                EXPECT_EQ(c.get_right().get_down_layer(), tmp);
+                break;
+            case BLUE:
+                EXPECT_EQ(c.get_back().get_down_layer(), tmp);
+                break;
+        }
+    }
+    c.D_prime();
+    EXPECT_EQ(c.is_solved(), true);
+}
+
+TEST(Cube, moveset_f){
+    std::vector<Color> tmp;
+    edurolp::Cube c;
+    EXPECT_EQ(c.is_solved(), true);
+    c.F();
+    EXPECT_EQ(c.is_solved(), false);
+    EXPECT_EQ(c.get_front().is_solved(), true);
+    for(auto &p: {WHITE, BLUE, YELLOW, GREEN}) {
+        tmp = {p, p, p};
+        switch (p){
+            case YELLOW:
+                EXPECT_EQ(c.get_left().get_right_layer(), tmp);
+                break;
+            case GREEN:
+                EXPECT_EQ(c.get_top().get_down_layer(), tmp);
+                break;
+            case WHITE:
+                EXPECT_EQ(c.get_right().get_left_layer(), tmp);
+                break;
+            case BLUE:
+                EXPECT_EQ(c.get_down().get_top_layer(), tmp);
+                break;
+        }
+    }
+    c.F();
+    EXPECT_EQ(c.is_solved(), false);
+    EXPECT_EQ(c.get_front().is_solved(), true);
+    for(auto &p: {WHITE, BLUE, YELLOW, GREEN}) {
+        tmp = {p, p, p};
+        switch (p){
+            case BLUE:
+                EXPECT_EQ(c.get_left().get_right_layer(), tmp);
+                break;
+            case YELLOW:
+                EXPECT_EQ(c.get_top().get_down_layer(), tmp);
+                break;
+            case GREEN:
+                EXPECT_EQ(c.get_right().get_left_layer(), tmp);
+                break;
+            case WHITE:
+                EXPECT_EQ(c.get_down().get_top_layer(), tmp);
+                break;
+        }
+    }
+    c.F();
+    EXPECT_EQ(c.is_solved(), false);
+    EXPECT_EQ(c.get_front().is_solved(), true);
+    for(auto &p: {WHITE, BLUE, YELLOW, GREEN}) {
+        tmp = {p, p, p};
+        switch (p){
+            case WHITE:
+                EXPECT_EQ(c.get_left().get_right_layer(), tmp);
+                break;
+            case BLUE:
+                EXPECT_EQ(c.get_top().get_down_layer(), tmp);
+                break;
+            case YELLOW:
+                EXPECT_EQ(c.get_right().get_left_layer(), tmp);
+                break;
+            case GREEN:
+                EXPECT_EQ(c.get_down().get_top_layer(), tmp);
+                break;
+        }
+    }
+    c.F();
+    EXPECT_EQ(c.is_solved(), true);
+}
+
+TEST(Cube, moveset_f_prime){
+    std::vector<Color> tmp;
+    edurolp::Cube c;
+    EXPECT_EQ(c.is_solved(), true);
+    c.F_prime();
+    EXPECT_EQ(c.is_solved(), false);
+    EXPECT_EQ(c.get_front().is_solved(), true);
+    for(auto &p: {WHITE, BLUE, YELLOW, GREEN}) {
+        tmp = {p, p, p};
+        switch (p){
+            case WHITE:
+                EXPECT_EQ(c.get_left().get_right_layer(), tmp);
+                break;
+            case BLUE:
+                EXPECT_EQ(c.get_top().get_down_layer(), tmp);
+                break;
+            case YELLOW:
+                EXPECT_EQ(c.get_right().get_left_layer(), tmp);
+                break;
+            case GREEN:
+                EXPECT_EQ(c.get_down().get_top_layer(), tmp);
+                break;
+        }
+    }
+    c.F_prime();
+    EXPECT_EQ(c.is_solved(), false);
+    EXPECT_EQ(c.get_front().is_solved(), true);
+    for(auto &p: {WHITE, BLUE, YELLOW, GREEN}) {
+        tmp = {p, p, p};
+        switch (p){
+            case BLUE:
+                EXPECT_EQ(c.get_left().get_right_layer(), tmp);
+                break;
+            case YELLOW:
+                EXPECT_EQ(c.get_top().get_down_layer(), tmp);
+                break;
+            case GREEN:
+                EXPECT_EQ(c.get_right().get_left_layer(), tmp);
+                break;
+            case WHITE:
+                EXPECT_EQ(c.get_down().get_top_layer(), tmp);
+                break;
+        }
+    }
+    c.F_prime();
+    EXPECT_EQ(c.is_solved(), false);
+    EXPECT_EQ(c.get_front().is_solved(), true);
+    for(auto &p: {WHITE, BLUE, YELLOW, GREEN}) {
+        tmp = {p, p, p};
+        switch (p){
+            case YELLOW:
+                EXPECT_EQ(c.get_left().get_right_layer(), tmp);
+                break;
+            case GREEN:
+                EXPECT_EQ(c.get_top().get_down_layer(), tmp);
+                break;
+            case WHITE:
+                EXPECT_EQ(c.get_right().get_left_layer(), tmp);
+                break;
+            case BLUE:
+                EXPECT_EQ(c.get_down().get_top_layer(), tmp);
+                break;
+        }
+    }
+    c.F_prime();
+    EXPECT_EQ(c.is_solved(), true);
+}
+
+TEST(Cube, moveset_b){
+    std::vector<Color> tmp;
+    edurolp::Cube c;
+    EXPECT_EQ(c.is_solved(), true);
+    c.B();
+    EXPECT_EQ(c.is_solved(), false);
+    EXPECT_EQ(c.get_back().is_solved(), true);
+    for(auto &p: {WHITE, BLUE, YELLOW, GREEN}) {
+        tmp = {p, p, p};
+        switch (p){
+            case WHITE:
+                EXPECT_EQ(c.get_left().get_left_layer(), tmp);
+                break;
+            case BLUE:
+                EXPECT_EQ(c.get_top().get_top_layer(), tmp);
+                break;
+            case YELLOW:
+                EXPECT_EQ(c.get_right().get_right_layer(), tmp);
+                break;
+            case GREEN:
+                EXPECT_EQ(c.get_down().get_down_layer(), tmp);
+                break;
+        }
+    }
+    c.B();
+    EXPECT_EQ(c.is_solved(), false);
+    EXPECT_EQ(c.get_back().is_solved(), true);
+    for(auto &p: {WHITE, BLUE, YELLOW, GREEN}) {
+        tmp = {p, p, p};
+        switch (p){
+            case BLUE:
+                EXPECT_EQ(c.get_left().get_left_layer(), tmp);
+                break;
+            case YELLOW:
+                EXPECT_EQ(c.get_top().get_top_layer(), tmp);
+                break;
+            case GREEN:
+                EXPECT_EQ(c.get_right().get_right_layer(), tmp);
+                break;
+            case WHITE:
+                EXPECT_EQ(c.get_down().get_down_layer(), tmp);
+                break;
+        }
+    }
+    c.B();
+    EXPECT_EQ(c.is_solved(), false);
+    EXPECT_EQ(c.get_back().is_solved(), true);
+    for(auto &p: {WHITE, BLUE, YELLOW, GREEN}) {
+        tmp = {p, p, p};
+        switch (p){
+            case YELLOW:
+                EXPECT_EQ(c.get_left().get_left_layer(), tmp);
+                break;
+            case GREEN:
+                EXPECT_EQ(c.get_top().get_top_layer(), tmp);
+                break;
+            case WHITE:
+                EXPECT_EQ(c.get_right().get_right_layer(), tmp);
+                break;
+            case BLUE:
+                EXPECT_EQ(c.get_down().get_down_layer(), tmp);
+                break;
+        }
+    }
+    c.B();
+    EXPECT_EQ(c.is_solved(), true);
+}
+
+TEST(Cube, moveset_b_prime){
+    std::vector<Color> tmp;
+    edurolp::Cube c;
+    EXPECT_EQ(c.is_solved(), true);
+    c.B_prime();
+    EXPECT_EQ(c.is_solved(), false);
+    EXPECT_EQ(c.get_back().is_solved(), true);
+    for(auto &p: {WHITE, BLUE, YELLOW, GREEN}) {
+        tmp = {p, p, p};
+        switch (p){
+            case YELLOW:
+                EXPECT_EQ(c.get_left().get_left_layer(), tmp);
+                break;
+            case GREEN:
+                EXPECT_EQ(c.get_top().get_top_layer(), tmp);
+                break;
+            case WHITE:
+                EXPECT_EQ(c.get_right().get_right_layer(), tmp);
+                break;
+            case BLUE:
+                EXPECT_EQ(c.get_down().get_down_layer(), tmp);
+                break;
+        }
+    }
+    c.B_prime();
+    EXPECT_EQ(c.is_solved(), false);
+    EXPECT_EQ(c.get_back().is_solved(), true);
+    for(auto &p: {WHITE, BLUE, YELLOW, GREEN}) {
+        tmp = {p, p, p};
+        switch (p){
+            case BLUE:
+                EXPECT_EQ(c.get_left().get_left_layer(), tmp);
+                break;
+            case YELLOW:
+                EXPECT_EQ(c.get_top().get_top_layer(), tmp);
+                break;
+            case GREEN:
+                EXPECT_EQ(c.get_right().get_right_layer(), tmp);
+                break;
+            case WHITE:
+                EXPECT_EQ(c.get_down().get_down_layer(), tmp);
+                break;
+        }
+    }
+    c.B_prime();
+    EXPECT_EQ(c.is_solved(), false);
+    EXPECT_EQ(c.get_back().is_solved(), true);
+    for(auto &p: {WHITE, BLUE, YELLOW, GREEN}) {
+        tmp = {p, p, p};
+        switch (p){
+            case WHITE:
+                EXPECT_EQ(c.get_left().get_left_layer(), tmp);
+                break;
+            case BLUE:
+                EXPECT_EQ(c.get_top().get_top_layer(), tmp);
+                break;
+            case YELLOW:
+                EXPECT_EQ(c.get_right().get_right_layer(), tmp);
+                break;
+            case GREEN:
+                EXPECT_EQ(c.get_down().get_down_layer(), tmp);
+                break;
+        }
+    }
+    c.B_prime();
     EXPECT_EQ(c.is_solved(), true);
 }

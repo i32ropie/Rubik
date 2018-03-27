@@ -2,7 +2,7 @@
 3x3x3 Rubik's cubic solver
 
 # TODO
-- [ ] Tests for all movesets
+- [x] Tests for all movesets
 - [ ] Validate if the cube is valid
 - [ ] Overload operator to print cube objects with colors
 - [ ] Implement OLL + tests

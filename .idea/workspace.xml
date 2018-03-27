@@ -174,7 +174,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Rubik">
+  <component name="RunManager" selected="Application.Tests">
     <configuration name="Face.layers_swapping" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Rubik" TARGET_NAME="Tests" RUN_TARGET_PROJECT_NAME="Rubik" RUN_TARGET_NAME="Tests" TEST_CLASS="Face" TEST_METHOD="layers_swapping" TEST_MODE="SUITE_TEST" />
     <configuration name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Rubik" RUN_TARGET_NAME="Rubik" EXPLICIT_BUILD_TARGET_NAME="all" />
     <configuration name="Rubik" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Rubik" TARGET_NAME="Rubik" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Rubik" RUN_TARGET_NAME="Rubik" />
