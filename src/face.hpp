@@ -60,19 +60,29 @@ namespace edurolp{
                         return false;
             return true;
         }
-        std::vector<Color> get_top_layer() const {
-            return this->_data[0];
+        std::vector<Color> get_top_layer(const bool &reversed = false) const {
+            return reversed ? std::vector<Color>{this->_data[0][2],
+                                                 this->_data[0][1],
+                                                 this->_data[0][0]} : this->_data[0];
         }
-        std::vector<Color> get_down_layer() const {
-            return this->_data[2];
+        std::vector<Color> get_down_layer(const bool &reversed = false) const {
+            return reversed ? std::vector<Color>{this->_data[2][2],
+                                                 this->_data[2][1],
+                                                 this->_data[2][0]} : this->_data[2];
         }
-        std::vector<Color> get_right_layer() const {
-            return std::vector<Color>{this->_data[0][2],
+        std::vector<Color> get_right_layer(const bool &reversed = false) const {
+            return reversed ? std::vector<Color>{this->_data[2][2],
+                                                 this->_data[1][2],
+                                                 this->_data[0][2]}:
+                   std::vector<Color>{this->_data[0][2],
                                       this->_data[1][2],
                                       this->_data[2][2]};
         }
-        std::vector<Color> get_left_layer() const {
-            return std::vector<Color>{this->_data[0][0],
+        std::vector<Color> get_left_layer(const bool &reversed = false) const {
+            return reversed ? std::vector<Color>{this->_data[2][0],
+                                                 this->_data[1][0],
+                                                 this->_data[0][0]}:
+                   std::vector<Color>{this->_data[0][0],
                                       this->_data[1][0],
                                       this->_data[2][0]};
         }

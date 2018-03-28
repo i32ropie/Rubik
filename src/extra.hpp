@@ -36,7 +36,7 @@ typedef int Color;
 
 #include <map>
 
-std::map<Color, std::string> bg_color{
+static std::map<Color, std::string> bg_color{
         {WHITE, WHITE_BG},
         {YELLOW, YELLOW_BG},
         {RED, RED_BG},

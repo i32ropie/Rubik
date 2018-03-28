@@ -6,6 +6,10 @@
 
 #IncludeRegexTransform: 
 
+/home/i32ropie/Dropbox/Proyectos/Rubik/src/algorithms.hpp
+cube.hpp
+/home/i32ropie/Dropbox/Proyectos/Rubik/src/cube.hpp
+
 /home/i32ropie/Dropbox/Proyectos/Rubik/src/cube.hpp
 vector
 -
@@ -29,6 +33,8 @@ extra.hpp
 /home/i32ropie/Dropbox/Proyectos/Rubik/src/main.cpp
 iostream
 -
+algorithms.hpp
+/home/i32ropie/Dropbox/Proyectos/Rubik/src/algorithms.hpp
 cube.hpp
 /home/i32ropie/Dropbox/Proyectos/Rubik/src/cube.hpp
 

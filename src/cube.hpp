@@ -44,7 +44,7 @@ namespace edurolp{
          * @param left Green face
          * @param right Blue face
          */
-        Cube(Face &top, Face &front, Face &down, Face &back, Face &left, Face &right):
+        Cube(const Face &top, const Face &front, const Face &down, const Face &back, const Face &left, const Face &right):
                 _top(top),
                 _front(front),
                 _down(down),
@@ -102,8 +102,8 @@ namespace edurolp{
             // Rotate face
             this->_right.rotate_clockwise();
             // Swap layers
-            std::vector<Color> tp = this->_top.get_right_layer();
-            std::vector<Color> bk = this->_back.get_left_layer();
+            std::vector<Color> tp = this->_top.get_right_layer(true);
+            std::vector<Color> bk = this->_back.get_left_layer(true);
             std::vector<Color> dw = this->_down.get_right_layer();
             std::vector<Color> fr = this->_front.get_right_layer();
             this->_top.set_right_layer(fr);
@@ -116,8 +116,8 @@ namespace edurolp{
             this->_right.rotate_anti_clockwise();
             // Swap layers
             std::vector<Color> tp = this->_top.get_right_layer();
-            std::vector<Color> bk = this->_back.get_left_layer();
-            std::vector<Color> dw = this->_down.get_right_layer();
+            std::vector<Color> bk = this->_back.get_left_layer(true);
+            std::vector<Color> dw = this->_down.get_right_layer(true);
             std::vector<Color> fr = this->_front.get_right_layer();
             this->_top.set_right_layer(bk);
             this->_back.set_left_layer(dw);
@@ -129,8 +129,8 @@ namespace edurolp{
             this->_left.rotate_clockwise();
             // Swap layers
             std::vector<Color> tp = this->_top.get_left_layer();
-            std::vector<Color> bk = this->_back.get_right_layer();
-            std::vector<Color> dw = this->_down.get_left_layer();
+            std::vector<Color> bk = this->_back.get_right_layer(true);
+            std::vector<Color> dw = this->_down.get_left_layer(true);
             std::vector<Color> fr = this->_front.get_left_layer();
             this->_top.set_left_layer(bk);
             this->_back.set_right_layer(dw);
@@ -141,8 +141,8 @@ namespace edurolp{
             // Rotate face
             this->_left.rotate_anti_clockwise();
             // Swap layers
-            std::vector<Color> tp = this->_top.get_left_layer();
-            std::vector<Color> bk = this->_back.get_right_layer();
+            std::vector<Color> tp = this->_top.get_left_layer(true);
+            std::vector<Color> bk = this->_back.get_right_layer(true);
             std::vector<Color> dw = this->_down.get_left_layer();
             std::vector<Color> fr = this->_front.get_left_layer();
             this->_top.set_left_layer(fr);
@@ -207,9 +207,9 @@ namespace edurolp{
             this->_front.rotate_clockwise();
             // Swap layers
             std::vector<Color> tp = this->_top.get_down_layer();
-            std::vector<Color> rt = this->_right.get_left_layer();
+            std::vector<Color> rt = this->_right.get_left_layer(true);
             std::vector<Color> dw = this->_down.get_top_layer();
-            std::vector<Color> lt = this->_left.get_right_layer();
+            std::vector<Color> lt = this->_left.get_right_layer(true);
             this->_top.set_down_layer(lt);
             this->_right.set_left_layer(tp);
             this->_down.set_top_layer(rt);
@@ -219,9 +219,9 @@ namespace edurolp{
             // Rotate face
             this->_front.rotate_anti_clockwise();
             // Swap layers
-            std::vector<Color> tp = this->_top.get_down_layer();
+            std::vector<Color> tp = this->_top.get_down_layer(true);
             std::vector<Color> rt = this->_right.get_left_layer();
-            std::vector<Color> dw = this->_down.get_top_layer();
+            std::vector<Color> dw = this->_down.get_top_layer(true);
             std::vector<Color> lt = this->_left.get_right_layer();
             this->_top.set_down_layer(rt);
             this->_right.set_left_layer(dw);
@@ -233,9 +233,9 @@ namespace edurolp{
             this->_back.rotate_clockwise();
             // Swap layers
             std::vector<Color> tp = this->_top.get_top_layer();
-            std::vector<Color> rt = this->_right.get_right_layer();
+            std::vector<Color> rt = this->_right.get_right_layer(true);
             std::vector<Color> dw = this->_down.get_down_layer();
-            std::vector<Color> lt = this->_left.get_left_layer();
+            std::vector<Color> lt = this->_left.get_left_layer(true);
             this->_top.set_top_layer(rt);
             this->_right.set_right_layer(dw);
             this->_down.set_down_layer(lt);
@@ -245,9 +245,9 @@ namespace edurolp{
             // Rotate face
             this->_back.rotate_anti_clockwise();
             // Swap layers
-            std::vector<Color> tp = this->_top.get_top_layer();
+            std::vector<Color> tp = this->_top.get_top_layer(true);
             std::vector<Color> rt = this->_right.get_right_layer();
-            std::vector<Color> dw = this->_down.get_down_layer();
+            std::vector<Color> dw = this->_down.get_down_layer(true);
             std::vector<Color> lt = this->_left.get_left_layer();
             this->_top.set_top_layer(lt);
             this->_right.set_right_layer(tp);
