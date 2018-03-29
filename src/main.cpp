@@ -5,7 +5,7 @@
 int main() {
     edurolp::Cube c;
     c.flip();
-    edurolp::Algorithms::PLL::T(c);
+    edurolp::Algorithms::OLL::_20(c);
     std::cout << c << std::endl;
     return 0;
 }

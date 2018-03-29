@@ -43,12 +43,12 @@ namespace edurolp{
          * @brief Get the face color
          * @return Color of the face
          */
-        inline Color get_color() const { return this->_c; }
+        const inline Color &get_color() const { return this->_c; }
         /**
          * @brief Get the data matrix
          * @return Data matrix
          */
-        inline std::vector<std::vector<Color>> get_data() const { return this->_data; }
+        const inline std::vector<std::vector<Color>> &get_data() const { return this->_data; }
         /**
          * @brief Check if the face is solved
          * @return True if face solved, False if not
@@ -60,16 +60,31 @@ namespace edurolp{
                         return false;
             return true;
         }
+        /**
+         * @brief Get the face top layer
+         * @param reversed Get the layer reversed or not
+         * @return Top layer
+         */
         std::vector<Color> get_top_layer(const bool &reversed = false) const {
             return reversed ? std::vector<Color>{this->_data[0][2],
                                                  this->_data[0][1],
                                                  this->_data[0][0]} : this->_data[0];
         }
+        /**
+         * @brief Get the face down layer
+         * @param reversed Get the layer reversed or not
+         * @return Down layer
+         */
         std::vector<Color> get_down_layer(const bool &reversed = false) const {
             return reversed ? std::vector<Color>{this->_data[2][2],
                                                  this->_data[2][1],
                                                  this->_data[2][0]} : this->_data[2];
         }
+        /**
+         * @brief Get the face right layer
+         * @param reversed Get the layer reversed or not
+         * @return Right layer
+         */
         std::vector<Color> get_right_layer(const bool &reversed = false) const {
             return reversed ? std::vector<Color>{this->_data[2][2],
                                                  this->_data[1][2],
@@ -78,6 +93,11 @@ namespace edurolp{
                                       this->_data[1][2],
                                       this->_data[2][2]};
         }
+        /**
+         * @brief Get the face left layer
+         * @param reversed Get the layer reversed or not
+         * @return Left layer
+         */
         std::vector<Color> get_left_layer(const bool &reversed = false) const {
             return reversed ? std::vector<Color>{this->_data[2][0],
                                                  this->_data[1][0],
@@ -139,7 +159,6 @@ namespace edurolp{
                     this->_data[n-j-1][i] = tmp[i][j];
         }
     };
-
 }
 
 #endif //RUBIK_FACE_HPP

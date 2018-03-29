@@ -64,26 +64,45 @@ namespace edurolp{
             _right({{BLUE, BLUE, BLUE}, {BLUE, BLUE, BLUE}, {BLUE, BLUE, BLUE}}),
             _solved(this->is_solved()) {};
         /// @name Getters
+        /**
+         * @brief Get top face of the cube
+         * @return Top face
+         */
         const Face &get_top() const {
             return _top;
         }
-
+        /**
+         * @brief Get front face of the cube
+         * @return Front face
+         */
         const Face &get_front() const {
             return _front;
         }
-
+        /**
+         * @brief Get down face of the cube
+         * @return Down face
+         */
         const Face &get_down() const {
             return _down;
         }
-
+        /**
+         * @brief Get back face of the cube
+         * @return Back face
+         */
         const Face &get_back() const {
             return _back;
         }
-
+        /**
+         * @brief Get left face of the cube
+         * @return Left face
+         */
         const Face &get_left() const {
             return _left;
         }
-
+        /**
+         * @brief Get right face of the cube
+         * @return Right face
+         */
         const Face &get_right() const {
             return _right;
         }
@@ -98,6 +117,9 @@ namespace edurolp{
             return true;
         }
         /// @name Possible moves
+        /**
+         * @brief Apply R move on the cube
+         */
         void R() {
             // Rotate face
             this->_right.rotate_clockwise();
@@ -111,6 +133,9 @@ namespace edurolp{
             this->_down.set_right_layer(bk);
             this->_front.set_right_layer(dw);
         }
+        /**
+         * @brief Apply R' move on the cube
+         */
         void R_prime() {
             // Rotate face
             this->_right.rotate_anti_clockwise();
@@ -124,6 +149,9 @@ namespace edurolp{
             this->_down.set_right_layer(fr);
             this->_front.set_right_layer(tp);
         }
+        /**
+         * @brief Apply L move on the cube
+         */
         void L() {
             // Rotate face
             this->_left.rotate_clockwise();
@@ -137,6 +165,9 @@ namespace edurolp{
             this->_down.set_left_layer(fr);
             this->_front.set_left_layer(tp);
         }
+        /**
+         * @brief Apply L' move on the cube
+         */
         void L_prime() {
             // Rotate face
             this->_left.rotate_anti_clockwise();
@@ -150,6 +181,9 @@ namespace edurolp{
             this->_down.set_left_layer(bk);
             this->_front.set_left_layer(dw);
         }
+        /**
+         * @brief Apply U move on the cube
+         */
         void U() {
             // Rotate face
             this->_top.rotate_clockwise();
@@ -163,6 +197,9 @@ namespace edurolp{
             this->_back.set_top_layer(lt);
             this->_left.set_top_layer(fr);
         }
+        /**
+         * @brief Apply U' move on the cube
+         */
         void U_prime() {
             // Rotate face
             this->_top.rotate_anti_clockwise();
@@ -176,6 +213,9 @@ namespace edurolp{
             this->_back.set_top_layer(rt);
             this->_left.set_top_layer(bk);
         }
+        /**
+         * @brief Apply D move on the cube
+         */
         void D() {
             // Rotate face
             this->_down.rotate_clockwise();
@@ -189,6 +229,9 @@ namespace edurolp{
             this->_back.set_down_layer(rt);
             this->_left.set_down_layer(bk);
         }
+        /**
+         * @brief Apply D' move on the cube
+         */
         void D_prime() {
             // Rotate face
             this->_down.rotate_anti_clockwise();
@@ -202,6 +245,9 @@ namespace edurolp{
             this->_back.set_down_layer(lt);
             this->_left.set_down_layer(fr);
         }
+        /**
+         * @brief Apply F move on the cube
+         */
         void F() {
             // Rotate face
             this->_front.rotate_clockwise();
@@ -215,6 +261,9 @@ namespace edurolp{
             this->_down.set_top_layer(rt);
             this->_left.set_right_layer(dw);
         }
+        /**
+         * @brief Apply F' move on the cube
+         */
         void F_prime() {
             // Rotate face
             this->_front.rotate_anti_clockwise();
@@ -228,6 +277,9 @@ namespace edurolp{
             this->_down.set_top_layer(lt);
             this->_left.set_right_layer(tp);
         }
+        /**
+         * @brief Apply B move on the cube
+         */
         void B() {
             // Rotate face
             this->_back.rotate_clockwise();
@@ -241,6 +293,9 @@ namespace edurolp{
             this->_down.set_down_layer(lt);
             this->_left.set_left_layer(tp);
         }
+        /**
+         * @brief Apply B' move on the cube
+         */
         void B_prime() {
             // Rotate face
             this->_back.rotate_anti_clockwise();
@@ -284,6 +339,12 @@ namespace edurolp{
             this->_down = tmp;
         }
         /// @name Operator overloads
+        /**
+         * @brief Ostream overload to output the cube with colors
+         * @param output Stream where the cube will be outputed
+         * @param c Cube to output
+         * @return Stream with the cube outputed in
+         */
         friend std::ostream &operator <<(std::ostream &output, const Cube &c) {
             std::vector<std::vector<Color>> top   = c.get_top().get_data(),
                                             down  = c.get_down().get_data(),

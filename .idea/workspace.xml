@@ -2,12 +2,12 @@
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true" buildAllGenerated="true">
     <generated>
-      <config projectName="Rubik" targetName="gtest_main" />
-      <config projectName="Rubik" targetName="gtest" />
-      <config projectName="Rubik" targetName="Rubik" />
-      <config projectName="Rubik" targetName="gmock" />
-      <config projectName="Rubik" targetName="Tests" />
       <config projectName="Rubik" targetName="gmock_main" />
+      <config projectName="Rubik" targetName="gtest_main" />
+      <config projectName="Rubik" targetName="Rubik" />
+      <config projectName="Rubik" targetName="Tests" />
+      <config projectName="Rubik" targetName="gtest" />
+      <config projectName="Rubik" targetName="gmock" />
     </generated>
   </component>
   <component name="CMakeSettings">
@@ -19,11 +19,14 @@
     <list default="true" id="f5d9c687-a7a5-49a4-b0c2-244bcf76fc56" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Rubik" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Rubik" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Tests" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Tests" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/googletest-build/googlemock/CMakeFiles/gmock.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/googletest-build/googlemock/CMakeFiles/gmock.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/googletest-build/googlemock/CMakeFiles/gmock_main.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/googletest-build/googlemock/CMakeFiles/gmock_main.dir/depend.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/algorithms.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms.hpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/cube.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/cube.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/extra.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/extra.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/face.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/face.hpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/" />
@@ -36,7 +39,44 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf>
+      <file leaf-file-name="extra.hpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/extra.hpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="127">
+              <caret line="38" column="40" selection-start-line="38" selection-start-column="40" selection-end-line="38" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="cube.hpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/cube.hpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="37">
+              <caret line="345" column="51" selection-start-line="345" selection-start-column="51" selection-end-line="345" selection-end-column="51" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/main.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test_colors.cpp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test/test_colors.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -48,14 +88,15 @@
         <option value="$PROJECT_DIR$/test/main.cpp" />
         <option value="$PROJECT_DIR$/test/test_extra.cpp" />
         <option value="$PROJECT_DIR$/test/test_cube.cpp" />
+        <option value="$PROJECT_DIR$/test/test_face.cpp" />
+        <option value="$PROJECT_DIR$/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/src/algorithms.hpp" />
+        <option value="$PROJECT_DIR$/src/main.cpp" />
+        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/extra.hpp" />
         <option value="$PROJECT_DIR$/src/face.hpp" />
         <option value="$PROJECT_DIR$/src/cube.hpp" />
-        <option value="$PROJECT_DIR$/test/test_face.cpp" />
-        <option value="$PROJECT_DIR$/src/algorithms.hpp" />
-        <option value="$PROJECT_DIR$/src/main.cpp" />
-        <option value="$PROJECT_DIR$/CMakeLists.txt" />
-        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/test/test_colors.cpp" />
       </list>
     </option>
   </component>
@@ -125,7 +166,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Tests">
+  <component name="RunManager" selected="Application.Build All">
     <configuration name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Rubik" RUN_TARGET_NAME="Rubik" EXPLICIT_BUILD_TARGET_NAME="all" />
     <configuration name="Rubik" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Rubik" TARGET_NAME="Rubik" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Rubik" RUN_TARGET_NAME="Rubik" />
     <configuration name="Tests" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="--gtest_color=yes" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Rubik" TARGET_NAME="Tests" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Rubik" RUN_TARGET_NAME="Tests" />
@@ -157,11 +198,12 @@
       <workItem from="1522246120995" duration="46000" />
       <workItem from="1522246202579" duration="6375000" />
       <workItem from="1522273874434" duration="8841000" />
+      <workItem from="1522313535667" duration="6601000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16124000" />
+    <option name="totallyTimeSpent" value="22725000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="10" y="10" width="1346" height="729" extended-state="0" />
@@ -190,14 +232,14 @@
       <window_info anchor="bottom" id="Run" order="2" weight="0.32961783" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info content_ui="combo" id="Project" order="0" weight="0.1728763" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1728763" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info active="true" anchor="bottom" id="Messages" order="7" visible="true" weight="0.32961783" />
+      <window_info anchor="bottom" id="Messages" order="7" visible="true" weight="0.32961783" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="10" />
@@ -259,13 +301,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/main.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/test_extra.cpp" />
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt.in">
       <provider selected="true" editor-type-id="text-editor">
@@ -274,38 +309,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/extra.hpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="38" column="7" selection-start-line="38" selection-start-column="7" selection-end-line="38" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cmake-build-debug/googletest-build/cmake_install.cmake">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cmake-build-debug/googletest-build/CTestTestfile.cmake">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cmake-build-debug/googletest-src/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/test_cube.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-3298">
           <caret line="42" selection-start-line="42" selection-end-line="42" />
           <folding>
             <element signature="e#43#67#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/face.hpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-148">
-          <caret line="80" column="54" selection-start-line="80" selection-start-column="54" selection-end-line="80" selection-end-column="54" />
-          <folding>
-            <element signature="e#90#107#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -320,13 +329,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="39" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -334,17 +336,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cube.hpp">
+    <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="237" column="63" selection-start-line="237" selection-start-column="63" selection-end-line="237" selection-end-column="63" />
+        <state relative-caret-position="105">
+          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
-          <caret line="7" column="32" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
+          <caret line="7" column="37" lean-forward="true" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
@@ -353,8 +355,46 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/algorithms.hpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="91" column="55" selection-start-line="91" selection-start-column="55" selection-end-line="91" selection-end-column="55" />
+        <state relative-caret-position="-1983">
+          <caret line="168" column="88" selection-start-line="168" selection-start-column="88" selection-end-line="168" selection-end-column="88" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/face.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="67">
+          <caret line="160" column="6" selection-start-line="160" selection-start-column="6" selection-end-line="160" selection-end-column="6" />
+          <folding>
+            <element signature="e#90#107#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/extra.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="38" column="40" selection-start-line="38" selection-start-column="40" selection-end-line="38" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cube.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="37">
+          <caret line="345" column="51" selection-start-line="345" selection-start-column="51" selection-end-line="345" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/test_colors.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
         </state>
       </provider>
     </entry>

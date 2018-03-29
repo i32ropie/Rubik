@@ -5,7 +5,7 @@
 - [x] Tests for all movesets
 - [x] Overload operator to print cube objects with colors
 - [x] Implement PLL + tests
-- [ ] Implement OLL + tests
+- [x] Implement OLL + tests
 - [ ] Document more code
 - [ ] Create class for solving the cube
 - [ ] Validate if the cube is valid
