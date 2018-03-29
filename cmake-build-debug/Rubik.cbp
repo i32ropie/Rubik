@@ -401,6 +401,9 @@
 		<Unit filename="/home/i32ropie/Dropbox/Proyectos/Rubik/src/main.cpp">
 			<Option target="Rubik"/>
 		</Unit>
+		<Unit filename="/home/i32ropie/Dropbox/Proyectos/Rubik/src/solver.hpp">
+			<Option target="Rubik"/>
+		</Unit>
 		<Unit filename="/home/i32ropie/Dropbox/Proyectos/Rubik/test/main.cpp">
 			<Option target="Tests"/>
 		</Unit>

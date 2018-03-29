@@ -5,10 +5,11 @@
 #ifndef RUBIK_ALGORITHMS_HPP
 #define RUBIK_ALGORITHMS_HPP
 
+#include <random>
 #include "cube.hpp"
 
 namespace edurolp{
-    /// Map to parse the moves
+    /// Map to parse moves to int
     static std::map<std::string, int> moves_to_int{
             {"R" , 1},
             {"R'", 2},
@@ -61,9 +62,26 @@ namespace edurolp{
                         std::cout << "He recibido " << p << " en execute_moves." << std::endl;
                         exit(1);
                 }
+                // Bellow line is only for development use
+                // std::cout << "\t" << p << std::endl << c << std::endl;
             }
         }
     public:
+        const static std::string scramble(Cube &c){
+            std::vector<std::string> moves{"R", "R'", "L", "L'", "U", "U'", "D", "D'", "F", "F'", "B", "B'"};
+            std::vector<std::string> scramble_vector;
+            std::string scramble_string, tmp;
+            std::random_device rd;
+            std::mt19937 e(rd());
+            std::uniform_int_distribution<> d(0, (int)moves.size() - 1);
+            for(int i = 0 ; i < 20 ; ++i){
+                tmp = moves[d(e)];
+                scramble_vector.emplace_back(tmp);
+                scramble_string += " " + tmp;
+            }
+            execute_moves(c, scramble_vector);
+            return scramble_string;
+        }
         // https://www.speedsolving.com/wiki/index.php/PLL
         class PLL{
         public:

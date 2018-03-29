@@ -4,8 +4,8 @@
 
 int main() {
     edurolp::Cube c;
-    c.flip();
-    edurolp::Algorithms::OLL::_20(c);
+    std::string scram = edurolp::Algorithms::scramble(c);
     std::cout << c << std::endl;
+    std::cout << scram << std::endl;
     return 0;
 }
