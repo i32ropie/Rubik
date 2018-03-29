@@ -3,8 +3,8 @@
 
 # TODO
 - [x] Tests for all movesets
-- [ ] Validate if the cube is valid
 - [x] Overload operator to print cube objects with colors
+- [x] Implement PLL + tests
 - [ ] Implement OLL + tests
-- [ ] Implement PLL + tests
-
+- [ ] Create class for solving the cube
+- [ ] Validate if the cube is valid

@@ -4,8 +4,8 @@
 
 int main() {
     edurolp::Cube c;
-    std::cout << c << std::endl;
-    edurolp::Algorithms::PLL_U(c);
+    c.flip();
+    edurolp::Algorithms::PLL::T(c);
     std::cout << c << std::endl;
     return 0;
 }

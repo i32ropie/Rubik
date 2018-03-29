@@ -4,12 +4,12 @@
 -- Build files have been written to: /home/i32ropie/Dropbox/Proyectos/Rubik/cmake-build-debug/googletest-download
 [ 11%] Performing update step for 'googletest'
 La rama actual master está actualizada.
-No configure step for 'googletest'
-No build step for 'googletest'
-No install step for 'googletest'
-No test step for 'googletest'
-Completed 'googletest'
-Built target googletest
+[ 22%] No configure step for 'googletest'
+[ 33%] No build step for 'googletest'
+[ 44%] No install step for 'googletest'
+[ 55%] No test step for 'googletest'
+[ 66%] Completed 'googletest'
+[100%] Built target googletest
 -- Configuring done
 -- Generating done
 -- Build files have been written to: /home/i32ropie/Dropbox/Proyectos/Rubik/cmake-build-debug

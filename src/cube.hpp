@@ -232,10 +232,10 @@ namespace edurolp{
             // Rotate face
             this->_back.rotate_clockwise();
             // Swap layers
-            std::vector<Color> tp = this->_top.get_top_layer();
-            std::vector<Color> rt = this->_right.get_right_layer(true);
-            std::vector<Color> dw = this->_down.get_down_layer();
-            std::vector<Color> lt = this->_left.get_left_layer(true);
+            std::vector<Color> tp = this->_top.get_top_layer(true);
+            std::vector<Color> rt = this->_right.get_right_layer();
+            std::vector<Color> dw = this->_down.get_down_layer(true);
+            std::vector<Color> lt = this->_left.get_left_layer();
             this->_top.set_top_layer(rt);
             this->_right.set_right_layer(dw);
             this->_down.set_down_layer(lt);
@@ -245,10 +245,10 @@ namespace edurolp{
             // Rotate face
             this->_back.rotate_anti_clockwise();
             // Swap layers
-            std::vector<Color> tp = this->_top.get_top_layer(true);
-            std::vector<Color> rt = this->_right.get_right_layer();
-            std::vector<Color> dw = this->_down.get_down_layer(true);
-            std::vector<Color> lt = this->_left.get_left_layer();
+            std::vector<Color> tp = this->_top.get_top_layer();
+            std::vector<Color> rt = this->_right.get_right_layer(true);
+            std::vector<Color> dw = this->_down.get_down_layer();
+            std::vector<Color> lt = this->_left.get_left_layer(true);
             this->_top.set_top_layer(lt);
             this->_right.set_right_layer(tp);
             this->_down.set_down_layer(rt);
@@ -299,9 +299,6 @@ namespace edurolp{
                     output << "         " << MID_LEFT_SEPARATOR << (HORIZONTAL_LINE + FULL_SEPARATOR)*2 << HORIZONTAL_LINE << MID_RIGHT_SEPARATOR << std::endl;
 
             }
-//            output << "         " << VERTICAL_LINE << bg_color[top[1][0]] << VERTICAL_LINE <<  bg_color[top[1][1]] << VERTICAL_LINE << bg_color[top[1][2]] << VERTICAL_LINE << std::endl;
-//            output << "         " << MID_LEFT_SEPARATOR << (HORIZONTAL_LINE + FULL_SEPARATOR)*2 << HORIZONTAL_LINE << MID_RIGHT_SEPARATOR << std::endl;
-//            output << "         " << VERTICAL_LINE << bg_color[top[2][0]] << VERTICAL_LINE <<  bg_color[top[2][1]] << VERTICAL_LINE << bg_color[top[2][2]] << VERTICAL_LINE << std::endl;
             output << TOP_LEFT_CORNER << (HORIZONTAL_LINE + TOP_SEPARATOR)*2 << HORIZONTAL_LINE << (FULL_SEPARATOR + HORIZONTAL_LINE)*4 << (TOP_SEPARATOR + HORIZONTAL_LINE)*5 << TOP_RIGHT_CORNER << std::endl;
             for(int i = 0 ; i < 3 ; ++i){
                 for(auto &p: {left, front, right, back}){
