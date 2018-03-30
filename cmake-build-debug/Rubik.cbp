@@ -416,6 +416,9 @@
 		<Unit filename="/home/i32ropie/Dropbox/Proyectos/Rubik/test/test_face.cpp">
 			<Option target="Tests"/>
 		</Unit>
+		<Unit filename="/home/i32ropie/Dropbox/Proyectos/Rubik/test/test_solver.cpp">
+			<Option target="Tests"/>
+		</Unit>
 		<Unit filename="/home/i32ropie/Dropbox/Proyectos/Rubik/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

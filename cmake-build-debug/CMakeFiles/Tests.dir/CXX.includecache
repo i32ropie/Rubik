@@ -6,6 +6,12 @@
 
 #IncludeRegexTransform: 
 
+/home/i32ropie/Dropbox/Proyectos/Rubik/src/algorithms.hpp
+random
+-
+cube.hpp
+/home/i32ropie/Dropbox/Proyectos/Rubik/src/cube.hpp
+
 /home/i32ropie/Dropbox/Proyectos/Rubik/src/cube.hpp
 vector
 -
@@ -25,6 +31,14 @@ initializer_list
 -
 extra.hpp
 /home/i32ropie/Dropbox/Proyectos/Rubik/src/extra.hpp
+
+/home/i32ropie/Dropbox/Proyectos/Rubik/src/solver.hpp
+algorithm
+-
+stdexcept
+-
+algorithms.hpp
+/home/i32ropie/Dropbox/Proyectos/Rubik/src/algorithms.hpp
 
 /home/i32ropie/Dropbox/Proyectos/Rubik/test/main.cpp
 gtest/gtest.h
@@ -49,6 +63,12 @@ gtest/gtest.h
 -
 ../src/face.hpp
 /home/i32ropie/Dropbox/Proyectos/Rubik/src/face.hpp
+
+/home/i32ropie/Dropbox/Proyectos/Rubik/test/test_solver.cpp
+gtest/gtest.h
+-
+../src/solver.hpp
+/home/i32ropie/Dropbox/Proyectos/Rubik/src/solver.hpp
 
 googletest-src/googletest/include/gtest/gtest-death-test.h
 gtest/internal/gtest-death-test-internal.h

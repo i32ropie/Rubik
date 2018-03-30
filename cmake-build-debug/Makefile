@@ -369,6 +369,33 @@ test/test_face.cpp.s:
 	$(MAKE) -f CMakeFiles/Tests.dir/build.make CMakeFiles/Tests.dir/test/test_face.cpp.s
 .PHONY : test/test_face.cpp.s
 
+test/test_solver.o: test/test_solver.cpp.o
+
+.PHONY : test/test_solver.o
+
+# target to build an object file
+test/test_solver.cpp.o:
+	$(MAKE) -f CMakeFiles/Tests.dir/build.make CMakeFiles/Tests.dir/test/test_solver.cpp.o
+.PHONY : test/test_solver.cpp.o
+
+test/test_solver.i: test/test_solver.cpp.i
+
+.PHONY : test/test_solver.i
+
+# target to preprocess a source file
+test/test_solver.cpp.i:
+	$(MAKE) -f CMakeFiles/Tests.dir/build.make CMakeFiles/Tests.dir/test/test_solver.cpp.i
+.PHONY : test/test_solver.cpp.i
+
+test/test_solver.s: test/test_solver.cpp.s
+
+.PHONY : test/test_solver.s
+
+# target to generate assembly for a file
+test/test_solver.cpp.s:
+	$(MAKE) -f CMakeFiles/Tests.dir/build.make CMakeFiles/Tests.dir/test/test_solver.cpp.s
+.PHONY : test/test_solver.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -402,6 +429,9 @@ help:
 	@echo "... test/test_face.o"
 	@echo "... test/test_face.i"
 	@echo "... test/test_face.s"
+	@echo "... test/test_solver.o"
+	@echo "... test/test_solver.i"
+	@echo "... test/test_solver.s"
 .PHONY : help
 
 

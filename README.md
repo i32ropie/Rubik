@@ -6,6 +6,6 @@
 - [x] Overload operator to print cube objects with colors
 - [x] Implement PLL
 - [x] Implement OLL
-- [ ] Document more code
+- [x] Validate if the cube is valid
 - [ ] Create class for solving the cube
-- [ ] Validate if the cube is valid
+- [ ] Document more code

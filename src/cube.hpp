@@ -10,7 +10,7 @@
 #include "face.hpp"
 
 namespace edurolp{
-    std::string operator *(const std::string &s, size_t count){
+    static std::string operator *(const std::string &s, size_t count){
         std::string ret;
         for(size_t i = 0 ; i < count ; ++i){
             ret += s;
@@ -64,6 +64,9 @@ namespace edurolp{
             _right({{BLUE, BLUE, BLUE}, {BLUE, BLUE, BLUE}, {BLUE, BLUE, BLUE}}),
             _solved(this->is_solved()) {};
         /// @name Getters
+        const std::vector<Face> get_all_faces() const {
+            return std::vector<Face>{_top, _down, _front, _back, _right, _left};
+        }
         /**
          * @brief Get top face of the cube
          * @return Top face

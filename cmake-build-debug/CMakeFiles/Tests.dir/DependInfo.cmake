@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/i32ropie/Dropbox/Proyectos/Rubik/test/test_colors.cpp" "/home/i32ropie/Dropbox/Proyectos/Rubik/cmake-build-debug/CMakeFiles/Tests.dir/test/test_colors.cpp.o"
   "/home/i32ropie/Dropbox/Proyectos/Rubik/test/test_cube.cpp" "/home/i32ropie/Dropbox/Proyectos/Rubik/cmake-build-debug/CMakeFiles/Tests.dir/test/test_cube.cpp.o"
   "/home/i32ropie/Dropbox/Proyectos/Rubik/test/test_face.cpp" "/home/i32ropie/Dropbox/Proyectos/Rubik/cmake-build-debug/CMakeFiles/Tests.dir/test/test_face.cpp.o"
+  "/home/i32ropie/Dropbox/Proyectos/Rubik/test/test_solver.cpp" "/home/i32ropie/Dropbox/Proyectos/Rubik/cmake-build-debug/CMakeFiles/Tests.dir/test/test_solver.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

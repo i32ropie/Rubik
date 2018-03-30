@@ -35,8 +35,18 @@ extra.hpp
 /home/i32ropie/Dropbox/Proyectos/Rubik/src/main.cpp
 iostream
 -
+solver.hpp
+/home/i32ropie/Dropbox/Proyectos/Rubik/src/solver.hpp
 algorithms.hpp
 /home/i32ropie/Dropbox/Proyectos/Rubik/src/algorithms.hpp
 cube.hpp
 /home/i32ropie/Dropbox/Proyectos/Rubik/src/cube.hpp
+
+/home/i32ropie/Dropbox/Proyectos/Rubik/src/solver.hpp
+algorithm
+-
+stdexcept
+-
+algorithms.hpp
+/home/i32ropie/Dropbox/Proyectos/Rubik/src/algorithms.hpp
 

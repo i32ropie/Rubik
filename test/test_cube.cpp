@@ -890,3 +890,15 @@ TEST(Cube, flip){
     c.flip();
     EXPECT_EQ(c.is_solved(), true);
 }
+
+TEST(Cube, small_algorithm){
+    edurolp::Cube c;
+    EXPECT_EQ(c.is_solved(), true);
+    for(int i = 0 ; i < 6 ; ++i){
+        c.R();
+        c.U();
+        c.R_prime();
+        c.U_prime();
+    }
+    EXPECT_EQ(c.is_solved(), true);
+}

@@ -6,4 +6,5 @@ CMakeFiles/Rubik.dir/src/main.cpp.o: ../src/cube.hpp
 CMakeFiles/Rubik.dir/src/main.cpp.o: ../src/extra.hpp
 CMakeFiles/Rubik.dir/src/main.cpp.o: ../src/face.hpp
 CMakeFiles/Rubik.dir/src/main.cpp.o: ../src/main.cpp
+CMakeFiles/Rubik.dir/src/main.cpp.o: ../src/solver.hpp
 

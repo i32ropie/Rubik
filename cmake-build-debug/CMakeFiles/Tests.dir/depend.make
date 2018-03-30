@@ -103,3 +103,32 @@ CMakeFiles/Tests.dir/test/test_face.cpp.o: googletest-src/googletest/include/gte
 CMakeFiles/Tests.dir/test/test_face.cpp.o: googletest-src/googletest/include/gtest/internal/gtest-tuple.h
 CMakeFiles/Tests.dir/test/test_face.cpp.o: googletest-src/googletest/include/gtest/internal/gtest-type-util.h
 
+CMakeFiles/Tests.dir/test/test_solver.cpp.o: ../src/algorithms.hpp
+CMakeFiles/Tests.dir/test/test_solver.cpp.o: ../src/cube.hpp
+CMakeFiles/Tests.dir/test/test_solver.cpp.o: ../src/extra.hpp
+CMakeFiles/Tests.dir/test/test_solver.cpp.o: ../src/face.hpp
+CMakeFiles/Tests.dir/test/test_solver.cpp.o: ../src/solver.hpp
+CMakeFiles/Tests.dir/test/test_solver.cpp.o: ../test/test_solver.cpp
+CMakeFiles/Tests.dir/test/test_solver.cpp.o: googletest-src/googletest/include/gtest/gtest-death-test.h
+CMakeFiles/Tests.dir/test/test_solver.cpp.o: googletest-src/googletest/include/gtest/gtest-message.h
+CMakeFiles/Tests.dir/test/test_solver.cpp.o: googletest-src/googletest/include/gtest/gtest-param-test.h
+CMakeFiles/Tests.dir/test/test_solver.cpp.o: googletest-src/googletest/include/gtest/gtest-printers.h
+CMakeFiles/Tests.dir/test/test_solver.cpp.o: googletest-src/googletest/include/gtest/gtest-test-part.h
+CMakeFiles/Tests.dir/test/test_solver.cpp.o: googletest-src/googletest/include/gtest/gtest-typed-test.h
+CMakeFiles/Tests.dir/test/test_solver.cpp.o: googletest-src/googletest/include/gtest/gtest.h
+CMakeFiles/Tests.dir/test/test_solver.cpp.o: googletest-src/googletest/include/gtest/gtest_pred_impl.h
+CMakeFiles/Tests.dir/test/test_solver.cpp.o: googletest-src/googletest/include/gtest/gtest_prod.h
+CMakeFiles/Tests.dir/test/test_solver.cpp.o: googletest-src/googletest/include/gtest/internal/custom/gtest-port.h
+CMakeFiles/Tests.dir/test/test_solver.cpp.o: googletest-src/googletest/include/gtest/internal/custom/gtest-printers.h
+CMakeFiles/Tests.dir/test/test_solver.cpp.o: googletest-src/googletest/include/gtest/internal/gtest-death-test-internal.h
+CMakeFiles/Tests.dir/test/test_solver.cpp.o: googletest-src/googletest/include/gtest/internal/gtest-filepath.h
+CMakeFiles/Tests.dir/test/test_solver.cpp.o: googletest-src/googletest/include/gtest/internal/gtest-internal.h
+CMakeFiles/Tests.dir/test/test_solver.cpp.o: googletest-src/googletest/include/gtest/internal/gtest-linked_ptr.h
+CMakeFiles/Tests.dir/test/test_solver.cpp.o: googletest-src/googletest/include/gtest/internal/gtest-param-util-generated.h
+CMakeFiles/Tests.dir/test/test_solver.cpp.o: googletest-src/googletest/include/gtest/internal/gtest-param-util.h
+CMakeFiles/Tests.dir/test/test_solver.cpp.o: googletest-src/googletest/include/gtest/internal/gtest-port-arch.h
+CMakeFiles/Tests.dir/test/test_solver.cpp.o: googletest-src/googletest/include/gtest/internal/gtest-port.h
+CMakeFiles/Tests.dir/test/test_solver.cpp.o: googletest-src/googletest/include/gtest/internal/gtest-string.h
+CMakeFiles/Tests.dir/test/test_solver.cpp.o: googletest-src/googletest/include/gtest/internal/gtest-tuple.h
+CMakeFiles/Tests.dir/test/test_solver.cpp.o: googletest-src/googletest/include/gtest/internal/gtest-type-util.h
+
